@@ -4,3 +4,6 @@
 [submodule "affinity/src/submodules/PeSTo"]
 	path = affinity/src/submodules/PeSTo
 	url = https://github.com/LBM-EPFL/PeSTo.git
+[submodule "affinity/sequence_only/DNABERT_2"]
+	path = affinity/sequence_only/DNABERT_2
+	url = https://github.com/Kovox91/DNABERT_2.git
