@@ -1,0 +1,58 @@
+{
+  "build": "ha675448_1106",
+  "build_number": 1106,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "sysroot_linux-64 2.17.*"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/libglvnd-cos7-x86_64-1.0.1-ha675448_1106",
+  "files": [
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libGLdispatch.so.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libGLdispatch.so.0.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/share/doc/libglvnd-1.0.1/README.md"
+  ],
+  "fn": "libglvnd-cos7-x86_64-1.0.1-ha675448_1106.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/libglvnd-cos7-x86_64-1.0.1-ha675448_1106",
+    "type": 3
+  },
+  "md5": "5b6f90a0c8dbdfee4562c01a61d00074",
+  "name": "libglvnd-cos7-x86_64",
+  "noarch": "generic",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/libglvnd-cos7-x86_64-1.0.1-ha675448_1106.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libGLdispatch.so.0",
+        "path_type": "softlink",
+        "sha256": "dcc1ca97f805a32938e8da524ad7615dad2de276b615b5bdf07e9322a23aed31",
+        "size_in_bytes": 640944
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libGLdispatch.so.0.0.0",
+        "path_type": "hardlink",
+        "sha256": "dcc1ca97f805a32938e8da524ad7615dad2de276b615b5bdf07e9322a23aed31",
+        "sha256_in_prefix": "dcc1ca97f805a32938e8da524ad7615dad2de276b615b5bdf07e9322a23aed31",
+        "size_in_bytes": 640944
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/share/doc/libglvnd-1.0.1/README.md",
+        "path_type": "hardlink",
+        "sha256": "776e14b49533793bca0c0510f9117062ddd94f35bcd5420498779215366dd54c",
+        "sha256_in_prefix": "776e14b49533793bca0c0510f9117062ddd94f35bcd5420498779215366dd54c",
+        "size_in_bytes": 25512
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a1c8f2323fd6264c87099aba24a88594756e661bbe1dca00cadd89c25b358c8a",
+  "size": 134338,
+  "subdir": "noarch",
+  "timestamp": 1726576996000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/libglvnd-cos7-x86_64-1.0.1-ha675448_1106.tar.bz2",
+  "version": "1.0.1"
+}

@@ -1,0 +1,87 @@
+{
+  "build": "he440d0b_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libstdcxx >=13",
+    "libzlib >=1.3.1,<2.0a0",
+    "zstd >=1.5.6,<1.6.0a0",
+    "snappy >=1.2.1,<1.3.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/blosc-1.21.6-he440d0b_1",
+  "files": [
+    "include/blosc-export.h",
+    "include/blosc.h",
+    "lib/libblosc.so",
+    "lib/libblosc.so.1",
+    "lib/libblosc.so.1.21.6",
+    "lib/pkgconfig/blosc.pc"
+  ],
+  "fn": "blosc-1.21.6-he440d0b_1.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/blosc-1.21.6-he440d0b_1",
+    "type": 3
+  },
+  "md5": "2c2fae981fd2afd00812c92ac47d023d",
+  "name": "blosc",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/blosc-1.21.6-he440d0b_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/blosc-export.h",
+        "path_type": "hardlink",
+        "sha256": "ca20d39d276209d485b900675fabbb14c78642f0ddef93a0141c8a5802eadc68",
+        "sha256_in_prefix": "ca20d39d276209d485b900675fabbb14c78642f0ddef93a0141c8a5802eadc68",
+        "size_in_bytes": 1632
+      },
+      {
+        "_path": "include/blosc.h",
+        "path_type": "hardlink",
+        "sha256": "1b7efa0efe51294ba8eb5ff4bf6d612d1c837a8e1df977fa44f6fe61802c8e24",
+        "sha256_in_prefix": "1b7efa0efe51294ba8eb5ff4bf6d612d1c837a8e1df977fa44f6fe61802c8e24",
+        "size_in_bytes": 19480
+      },
+      {
+        "_path": "lib/libblosc.so",
+        "path_type": "softlink",
+        "sha256": "68e87addc9d4171270bce8ebd72d9405851063f370fa5ba4d2c4e249fdeaef70",
+        "size_in_bytes": 79568
+      },
+      {
+        "_path": "lib/libblosc.so.1",
+        "path_type": "softlink",
+        "sha256": "68e87addc9d4171270bce8ebd72d9405851063f370fa5ba4d2c4e249fdeaef70",
+        "size_in_bytes": 79568
+      },
+      {
+        "_path": "lib/libblosc.so.1.21.6",
+        "path_type": "hardlink",
+        "sha256": "68e87addc9d4171270bce8ebd72d9405851063f370fa5ba4d2c4e249fdeaef70",
+        "sha256_in_prefix": "68e87addc9d4171270bce8ebd72d9405851063f370fa5ba4d2c4e249fdeaef70",
+        "size_in_bytes": 79568
+      },
+      {
+        "_path": "lib/pkgconfig/blosc.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/blosc_1733513006484/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "e0344775708cb74a45f7c0a5bf26367b3b067c59d2dc34acfbab1bdf1a7804bb",
+        "sha256_in_prefix": "a3bb1142aef61453aaa654e6d99e00f1f220b392856b7a44e88b49543a3c026d",
+        "size_in_bytes": 563
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e7af5d1183b06a206192ff440e08db1c4e8b2ca1f8376ee45fb2f3a85d4ee45d",
+  "size": 48427,
+  "subdir": "linux-64",
+  "timestamp": 1733513201000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/blosc-1.21.6-he440d0b_1.conda",
+  "version": "1.21.6"
+}

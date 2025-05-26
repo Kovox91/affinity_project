@@ -1,0 +1,73 @@
+{
+  "build": "py_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/schrodinger/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/pmw-2.0.1+3-py_3",
+  "files": [
+    "lib/python3.11/site-packages/Pmw.py",
+    "lib/python3.11/site-packages/PmwBlt.py",
+    "lib/python3.11/site-packages/PmwColor.py",
+    "lib/python3.11/site-packages/__pycache__/Pmw.cpython-311.pyc",
+    "lib/python3.11/site-packages/__pycache__/PmwBlt.cpython-311.pyc",
+    "lib/python3.11/site-packages/__pycache__/PmwColor.cpython-311.pyc"
+  ],
+  "fn": "pmw-2.0.1+3-py_3.tar.bz2",
+  "license": "BSD-like",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/pmw-2.0.1+3-py_3",
+    "type": 3
+  },
+  "md5": "5062a16843f90d169534097691f85edd",
+  "name": "pmw",
+  "noarch": "python",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/pmw-2.0.1+3-py_3.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/Pmw.py",
+        "path_type": "hardlink",
+        "sha256": "a431d5dc4c209d29f94baa23e98218f81cea6fa43084794f2a9ad3cdd4c8b29c",
+        "sha256_in_prefix": "a431d5dc4c209d29f94baa23e98218f81cea6fa43084794f2a9ad3cdd4c8b29c",
+        "size_in_bytes": 338618
+      },
+      {
+        "_path": "site-packages/PmwBlt.py",
+        "path_type": "hardlink",
+        "sha256": "d79572c51c561c7117c4d320bbe14ccc11e3a9f26fe5fb8c07ff353c4a468aa2",
+        "sha256_in_prefix": "d79572c51c561c7117c4d320bbe14ccc11e3a9f26fe5fb8c07ff353c4a468aa2",
+        "size_in_bytes": 25825
+      },
+      {
+        "_path": "site-packages/PmwColor.py",
+        "path_type": "hardlink",
+        "sha256": "1a6454153adb96fc775f6019c437043063d125416d7b2fb84dc6986e57e7540e",
+        "sha256_in_prefix": "1a6454153adb96fc775f6019c437043063d125416d7b2fb84dc6986e57e7540e",
+        "size_in_bytes": 12263
+      },
+      {
+        "_path": "lib/python3.11/site-packages/__pycache__/Pmw.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/__pycache__/PmwBlt.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/__pycache__/PmwColor.cpython-311.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 61930,
+  "subdir": "noarch",
+  "timestamp": 1588172390000,
+  "url": "https://conda.anaconda.org/schrodinger/noarch/pmw-2.0.1+3-py_3.tar.bz2",
+  "version": "2.0.1+3"
+}

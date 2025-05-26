@@ -1,0 +1,149 @@
+{
+  "build": "ha675448_1106",
+  "build_number": 1106,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "sysroot_linux-64 2.17.*"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/libdrm-cos7-x86_64-2.4.97-ha675448_1106",
+  "files": [
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2.4.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.2",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.2.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1.0.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libkms.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libkms.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/udev/rules.d/91-drm-modeset.rules",
+    "x86_64-conda-linux-gnu/sysroot/usr/share/doc/libdrm-2.4.97/README.rst",
+    "x86_64-conda-linux-gnu/sysroot/usr/share/libdrm/amdgpu.ids"
+  ],
+  "fn": "libdrm-cos7-x86_64-2.4.97-ha675448_1106.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/libdrm-cos7-x86_64-2.4.97-ha675448_1106",
+    "type": 3
+  },
+  "md5": "ed8be9ac257f340580c5820be02785ae",
+  "name": "libdrm-cos7-x86_64",
+  "noarch": "generic",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/libdrm-cos7-x86_64-2.4.97-ha675448_1106.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2",
+        "path_type": "softlink",
+        "sha256": "827b956f09a1a5703f8cf7495278180ed05cbd5dc53b7c5a90f3a9c57ab406c3",
+        "size_in_bytes": 70856
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2.4.0",
+        "path_type": "hardlink",
+        "sha256": "827b956f09a1a5703f8cf7495278180ed05cbd5dc53b7c5a90f3a9c57ab406c3",
+        "sha256_in_prefix": "827b956f09a1a5703f8cf7495278180ed05cbd5dc53b7c5a90f3a9c57ab406c3",
+        "size_in_bytes": 70856
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1",
+        "path_type": "softlink",
+        "sha256": "2d32ca89160b61556464d720772ca5328deed9df3ee55a1bbbd60c4032116b8c",
+        "size_in_bytes": 40568
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "2d32ca89160b61556464d720772ca5328deed9df3ee55a1bbbd60c4032116b8c",
+        "sha256_in_prefix": "2d32ca89160b61556464d720772ca5328deed9df3ee55a1bbbd60c4032116b8c",
+        "size_in_bytes": 40568
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1",
+        "path_type": "softlink",
+        "sha256": "3833275d0f4dc7c2a874e94787a9b1bc75e8c0aef2c4c58635adacd283c30026",
+        "size_in_bytes": 150200
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "3833275d0f4dc7c2a874e94787a9b1bc75e8c0aef2c4c58635adacd283c30026",
+        "sha256_in_prefix": "3833275d0f4dc7c2a874e94787a9b1bc75e8c0aef2c4c58635adacd283c30026",
+        "size_in_bytes": 150200
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.2",
+        "path_type": "softlink",
+        "sha256": "91951777b91f55e0c9451c27d5962d88fdbefad358b46901cf351f90028c7fe7",
+        "size_in_bytes": 32432
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.2.0.0",
+        "path_type": "hardlink",
+        "sha256": "91951777b91f55e0c9451c27d5962d88fdbefad358b46901cf351f90028c7fe7",
+        "sha256_in_prefix": "91951777b91f55e0c9451c27d5962d88fdbefad358b46901cf351f90028c7fe7",
+        "size_in_bytes": 32432
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1",
+        "path_type": "softlink",
+        "sha256": "bd0f6929b8e521457784d36e1f191a287c6c4f545e475d541ba2f2b1314222ce",
+        "size_in_bytes": 48840
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1.0.1",
+        "path_type": "hardlink",
+        "sha256": "bd0f6929b8e521457784d36e1f191a287c6c4f545e475d541ba2f2b1314222ce",
+        "sha256_in_prefix": "bd0f6929b8e521457784d36e1f191a287c6c4f545e475d541ba2f2b1314222ce",
+        "size_in_bytes": 48840
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libkms.so.1",
+        "path_type": "softlink",
+        "sha256": "0625e8b8744c57666f72a985faba54f0c3bc90cf238765e6b0a774798133ab79",
+        "size_in_bytes": 15672
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libkms.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "0625e8b8744c57666f72a985faba54f0c3bc90cf238765e6b0a774798133ab79",
+        "sha256_in_prefix": "0625e8b8744c57666f72a985faba54f0c3bc90cf238765e6b0a774798133ab79",
+        "size_in_bytes": 15672
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/udev/rules.d/91-drm-modeset.rules",
+        "path_type": "hardlink",
+        "sha256": "f29c28ca7fd5de46ff3382015b994ba3873519170e793925b5bc4e39c45486bb",
+        "sha256_in_prefix": "f29c28ca7fd5de46ff3382015b994ba3873519170e793925b5bc4e39c45486bb",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/share/doc/libdrm-2.4.97/README.rst",
+        "path_type": "hardlink",
+        "sha256": "916024465512120b94b158978c2999b644cd9d1679bd0718c061b61132dc2c27",
+        "sha256_in_prefix": "916024465512120b94b158978c2999b644cd9d1679bd0718c061b61132dc2c27",
+        "size_in_bytes": 2071
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/share/libdrm/amdgpu.ids",
+        "path_type": "hardlink",
+        "sha256": "512d5c5fba846716a6071d2920db984dd225041eea79671c06dfc9b7ee10fb3d",
+        "sha256_in_prefix": "512d5c5fba846716a6071d2920db984dd225041eea79671c06dfc9b7ee10fb3d",
+        "size_in_bytes": 6910
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "3808b928522954d1b7847e4a654b4d0f6531c75d8b50489cf0e255d2ef1914e0",
+  "size": 161991,
+  "subdir": "noarch",
+  "timestamp": 1726577302000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/libdrm-cos7-x86_64-2.4.97-ha675448_1106.tar.bz2",
+  "version": "2.4.97"
+}

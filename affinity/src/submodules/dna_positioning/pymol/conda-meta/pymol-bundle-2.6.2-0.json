@@ -1,0 +1,41 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "file:///tmp/miniforge/conda-bld/linux-64",
+  "constrains": [],
+  "depends": [
+    "apbs",
+    "biopython",
+    "collada2gltf",
+    "mengine",
+    "mpeg_encode",
+    "pdb2pqr >=2.1.2*",
+    "pycollada",
+    "pykerberos",
+    "pymol >=2.6.2,<3.0a0",
+    "pymol-web-examples >=2.4",
+    "zstandard"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/pymol-bundle-2.6.2-0",
+  "files": [],
+  "fn": "pymol-bundle-2.6.2-0.conda",
+  "license": "",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/pymol-bundle-2.6.2-0",
+    "type": 3
+  },
+  "md5": "4a69c0d8e2d61010ec051b6e5d10d669",
+  "name": "pymol-bundle",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/pymol-bundle-2.6.2-0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "pymol-bundle",
+  "sha256": "d6341f0bc369dfaa4d3ee5f998401ca414fc114416aea44c3b521bcac5aa671f",
+  "size": 19460,
+  "subdir": "linux-64",
+  "timestamp": 1738614780000,
+  "url": "file:///tmp/miniforge/conda-bld/linux-64/pymol-bundle-2.6.2-0.conda",
+  "version": "2.6.2"
+}

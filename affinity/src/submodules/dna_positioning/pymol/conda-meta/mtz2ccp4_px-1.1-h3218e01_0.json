@@ -1,0 +1,43 @@
+{
+  "build": "h3218e01_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/schrodinger/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=12",
+    "libgfortran-ng",
+    "libgfortran5 >=12.2.0",
+    "libopenblas >=0.3.10,<1.0a0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/mtz2ccp4_px-1.1-h3218e01_0",
+  "files": [
+    "bin/mtz2ccp4_px"
+  ],
+  "fn": "mtz2ccp4_px-1.1-h3218e01_0.tar.bz2",
+  "license": "proprietary - Schrodinger",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/mtz2ccp4_px-1.1-h3218e01_0",
+    "type": 3
+  },
+  "md5": "eeaea365f8d8cb335c8c5ed9b2864959",
+  "name": "mtz2ccp4_px",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/mtz2ccp4_px-1.1-h3218e01_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/mtz2ccp4_px",
+        "path_type": "hardlink",
+        "sha256": "164f50c94c524b8358c2db544afbf02a824992997387c238ee001c5525e9c894",
+        "sha256_in_prefix": "164f50c94c524b8358c2db544afbf02a824992997387c238ee001c5525e9c894",
+        "size_in_bytes": 966376
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 404450,
+  "subdir": "linux-64",
+  "timestamp": 1666936165000,
+  "url": "https://conda.anaconda.org/t/<TOKEN>/schrodinger/linux-64/mtz2ccp4_px-1.1-h3218e01_0.tar.bz2",
+  "version": "1.1"
+}

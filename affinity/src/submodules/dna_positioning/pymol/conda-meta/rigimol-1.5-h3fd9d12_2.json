@@ -1,0 +1,43 @@
+{
+  "build": "h3fd9d12_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/schrodinger/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc >=14",
+    "libstdcxx >=14",
+    "slm_x509 >=2024.3,<2024.4.0a0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/rigimol-1.5-h3fd9d12_2",
+  "files": [
+    "bin/rigimol"
+  ],
+  "fn": "rigimol-1.5-h3fd9d12_2.tar.bz2",
+  "license": "proprietary - Schrodinger",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/rigimol-1.5-h3fd9d12_2",
+    "type": 3
+  },
+  "md5": "aa282c5869f6b4230326bde442829887",
+  "name": "rigimol",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/rigimol-1.5-h3fd9d12_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/rigimol",
+        "path_type": "hardlink",
+        "sha256": "e341368d3edee246ef1cb01108f55a295c2ac9ad50fc1c96087c4e07c6abfc84",
+        "sha256_in_prefix": "e341368d3edee246ef1cb01108f55a295c2ac9ad50fc1c96087c4e07c6abfc84",
+        "size_in_bytes": 349792
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "562be9bc99b9e40efaad7b3bd992101587862ecad572c898006a552b09358e65",
+  "size": 156360,
+  "subdir": "linux-64",
+  "timestamp": 1733248550000,
+  "url": "https://conda.anaconda.org/t/<TOKEN>/schrodinger/linux-64/rigimol-1.5-h3fd9d12_2.tar.bz2",
+  "version": "1.5"
+}

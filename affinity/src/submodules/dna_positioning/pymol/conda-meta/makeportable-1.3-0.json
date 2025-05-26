@@ -1,0 +1,38 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/schrodinger/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/makeportable-1.3-0",
+  "files": [
+    "make-portable.sh"
+  ],
+  "fn": "makeportable-1.3-0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/makeportable-1.3-0",
+    "type": 3
+  },
+  "md5": "063b243b9a934900ba226f1c0a0be08a",
+  "name": "makeportable",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/makeportable-1.3-0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "make-portable.sh",
+        "path_type": "hardlink",
+        "sha256": "abd4beeebb445ab847dc5f9b72a3ab33e45bf23b934eaab576c90100bcdac1e2",
+        "sha256_in_prefix": "abd4beeebb445ab847dc5f9b72a3ab33e45bf23b934eaab576c90100bcdac1e2",
+        "size_in_bytes": 3834
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "makeportable",
+  "size": 3252,
+  "subdir": "linux-64",
+  "timestamp": 1548955252000,
+  "url": "https://conda.anaconda.org/schrodinger/linux-64/makeportable-1.3-0.tar.bz2",
+  "version": "1.3"
+}

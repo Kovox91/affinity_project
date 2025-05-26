@@ -1,0 +1,109 @@
+{
+  "build": "py311h9db375c_6",
+  "build_number": 6,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "python_abi 3.11.* *_cp311",
+    "python >=3.11,<3.12.0a0",
+    "krb5 >=1.21.3,<1.22.0a0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/pykerberos-1.2.4-py311h9db375c_6",
+  "files": [
+    "lib/python3.11/site-packages/kerberos.cpython-311-x86_64-linux-gnu.so",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/LICENSE",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/METADATA",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/RECORD",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/WHEEL",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/top_level.txt"
+  ],
+  "fn": "pykerberos-1.2.4-py311h9db375c_6.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/pykerberos-1.2.4-py311h9db375c_6",
+    "type": 3
+  },
+  "md5": "ff4216eceaaef22656f52efacc77334d",
+  "name": "pykerberos",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/pykerberos-1.2.4-py311h9db375c_6.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.11/site-packages/kerberos.cpython-311-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "4c350a720e087aafadae15ac4781e0d1f23bbf655e55006e86291d31cd08c51a",
+        "sha256_in_prefix": "4c350a720e087aafadae15ac4781e0d1f23bbf655e55006e86291d31cd08c51a",
+        "size_in_bytes": 51848
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "sha256_in_prefix": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_in_bytes": 11358
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "d03a409e22d2bfdc48b96c7c860dca8ba9f74c2b2321038be052ff130b2564f8",
+        "sha256_in_prefix": "d03a409e22d2bfdc48b96c7c860dca8ba9f74c2b2321038be052ff130b2564f8",
+        "size_in_bytes": 826
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d2076970e3f8a54062fff35a5161172a1ee6741d60b5d6870922f3b9de5a7b6b",
+        "sha256_in_prefix": "d2076970e3f8a54062fff35a5161172a1ee6741d60b5d6870922f3b9de5a7b6b",
+        "size_in_bytes": 786
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "b6907608561f5486351c14f7c0ea35aa8588b39f3354ecedfddc7ebbb2915161",
+        "sha256_in_prefix": "b6907608561f5486351c14f7c0ea35aa8588b39f3354ecedfddc7ebbb2915161",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "459d2575b82a43b0cff96100d054f5fdef9411579d9e6e1cf53a09e3b9a904f2",
+        "sha256_in_prefix": "459d2575b82a43b0cff96100d054f5fdef9411579d9e6e1cf53a09e3b9a904f2",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pykerberos-1.2.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6f4edd09f96abce0048d491e79ff941a74787de06c9693412687faf4eee8036b",
+        "sha256_in_prefix": "6f4edd09f96abce0048d491e79ff941a74787de06c9693412687faf4eee8036b",
+        "size_in_bytes": 9
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "3e50f9bd69efd433f460390ffdc1e2671c7ca0f5d3b2254bcd672f9f842c9315",
+  "size": 27401,
+  "subdir": "linux-64",
+  "timestamp": 1725289241000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pykerberos-1.2.4-py311h9db375c_6.conda",
+  "version": "1.2.4"
+}

@@ -1,0 +1,132 @@
+{
+  "build": "py311h9ecbd09_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "python_abi 3.11.* *_cp311",
+    "python >=3.11,<3.12.0a0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/pycosat-0.6.6-py311h9ecbd09_2",
+  "files": [
+    "lib/python3.11/site-packages/__pycache__/test_pycosat.cpython-311.pyc",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/AUTHORS.md",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/LICENSE",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/METADATA",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/RECORD",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/WHEEL",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/top_level.txt",
+    "lib/python3.11/site-packages/pycosat.cpython-311-x86_64-linux-gnu.so",
+    "lib/python3.11/site-packages/test_pycosat.py"
+  ],
+  "fn": "pycosat-0.6.6-py311h9ecbd09_2.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/pycosat-0.6.6-py311h9ecbd09_2",
+    "type": 3
+  },
+  "md5": "65a6d37c5a2868d5605cf2df3ea0236e",
+  "name": "pycosat",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/pycosat-0.6.6-py311h9ecbd09_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.11/site-packages/__pycache__/test_pycosat.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "fa42f7fb834b5498c33afff0b87685d525d45995631c4b823de13bf4c18428af",
+        "sha256_in_prefix": "fa42f7fb834b5498c33afff0b87685d525d45995631c4b823de13bf4c18428af",
+        "size_in_bytes": 25710
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/AUTHORS.md",
+        "path_type": "hardlink",
+        "sha256": "dcfd08cd98556e3290de96243f007831474328706e58fb2edc0118ebdb28d55e",
+        "sha256_in_prefix": "dcfd08cd98556e3290de96243f007831474328706e58fb2edc0118ebdb28d55e",
+        "size_in_bytes": 303
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "233d9a3b1d9e0d8afb120ee76b98e65c55ede04162fe37c2e803a3d38968021e",
+        "sha256_in_prefix": "233d9a3b1d9e0d8afb120ee76b98e65c55ede04162fe37c2e803a3d38968021e",
+        "size_in_bytes": 1084
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c3df68488a707ae6d6e0ec5c86eba6478b10910b74eb6a28a30fd5a2faf9cc7d",
+        "sha256_in_prefix": "c3df68488a707ae6d6e0ec5c86eba6478b10910b74eb6a28a30fd5a2faf9cc7d",
+        "size_in_bytes": 5361
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "3b287f61d6411b002e0c79e753cc1a68bcce025d98088b4857cc1b7c6baa2bad",
+        "sha256_in_prefix": "3b287f61d6411b002e0c79e753cc1a68bcce025d98088b4857cc1b7c6baa2bad",
+        "size_in_bytes": 970
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "37286a4055a7bc37e9909a964a5d468041649e585fa3cf3c5b1930b12afd069a",
+        "sha256_in_prefix": "37286a4055a7bc37e9909a964a5d468041649e585fa3cf3c5b1930b12afd069a",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "254e53f4ceefee44b02e2e04becaab6b4ee4afc03f43b4c4fe987c4513fafcdd",
+        "sha256_in_prefix": "254e53f4ceefee44b02e2e04becaab6b4ee4afc03f43b4c4fe987c4513fafcdd",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat-0.6.6.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "47df40ce884f9595883a39b54562bd8afea8e1dfd82b39165099c771ccd838d1",
+        "sha256_in_prefix": "47df40ce884f9595883a39b54562bd8afea8e1dfd82b39165099c771ccd838d1",
+        "size_in_bytes": 21
+      },
+      {
+        "_path": "lib/python3.11/site-packages/pycosat.cpython-311-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "e399a7853ee4ee390465f35bc461b7c6266ad1adcd316e680624045a6dfd097b",
+        "sha256_in_prefix": "e399a7853ee4ee390465f35bc461b7c6266ad1adcd316e680624045a6dfd097b",
+        "size_in_bytes": 92936
+      },
+      {
+        "_path": "lib/python3.11/site-packages/test_pycosat.py",
+        "path_type": "hardlink",
+        "sha256": "8488d76af0cd6f29c893e1e68761f7b974ecd1ca11461a319e9b0736b507e64d",
+        "sha256_in_prefix": "8488d76af0cd6f29c893e1e68761f7b974ecd1ca11461a319e9b0736b507e64d",
+        "size_in_bytes": 8836
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "873c566a423db7adb3915f73d2cbcb1f426e33eea8f9ef309982f39f21055c21",
+  "size": 87979,
+  "subdir": "linux-64",
+  "timestamp": 1732588510000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pycosat-0.6.6-py311h9ecbd09_2.conda",
+  "version": "0.6.6"
+}

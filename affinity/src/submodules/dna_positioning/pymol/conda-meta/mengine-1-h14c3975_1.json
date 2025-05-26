@@ -1,0 +1,40 @@
+{
+  "build": "h14c3975_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/mengine-1-h14c3975_1",
+  "files": [
+    "bin/mengine.exe"
+  ],
+  "fn": "mengine-1-h14c3975_1.tar.bz2",
+  "license": "Apache 2.0",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/mengine-1-h14c3975_1",
+    "type": 3
+  },
+  "md5": "7478d096a1c9a67caf9b5e4de259e0fc",
+  "name": "mengine",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/mengine-1-h14c3975_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/mengine.exe",
+        "path_type": "hardlink",
+        "sha256": "d695e80274e143f7c1646577c5c8b807776ad1da0ad896ba95ca2b2ac060dc57",
+        "sha256_in_prefix": "d695e80274e143f7c1646577c5c8b807776ad1da0ad896ba95ca2b2ac060dc57",
+        "size_in_bytes": 2694736
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 692552,
+  "subdir": "linux-64",
+  "timestamp": 1520592576000,
+  "url": "https://conda.anaconda.org/schrodinger/linux-64/mengine-1-h14c3975_1.tar.bz2",
+  "version": "1"
+}

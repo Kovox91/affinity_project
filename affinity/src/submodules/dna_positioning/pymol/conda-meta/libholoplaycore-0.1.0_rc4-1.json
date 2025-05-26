@@ -1,0 +1,38 @@
+{
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/libholoplaycore-0.1.0_rc4-1",
+  "files": [
+    "lib/libHoloPlayCore.so"
+  ],
+  "fn": "libholoplaycore-0.1.0_rc4-1.tar.bz2",
+  "license": "",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/libholoplaycore-0.1.0_rc4-1",
+    "type": 3
+  },
+  "md5": "31ec5c9f4554958b5d4014cf4adcb246",
+  "name": "libholoplaycore",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/libholoplaycore-0.1.0_rc4-1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libHoloPlayCore.so",
+        "path_type": "hardlink",
+        "sha256": "179e15707d170b48a895ab6f6da715839caf7e879ada52e48ce3836652951f2d",
+        "sha256_in_prefix": "179e15707d170b48a895ab6f6da715839caf7e879ada52e48ce3836652951f2d",
+        "size_in_bytes": 1229624
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 333235,
+  "subdir": "linux-64",
+  "timestamp": 1589902720000,
+  "url": "https://conda.anaconda.org/t/<TOKEN>/schrodinger/linux-64/libholoplaycore-0.1.0_rc4-1.tar.bz2",
+  "version": "0.1.0_rc4"
+}

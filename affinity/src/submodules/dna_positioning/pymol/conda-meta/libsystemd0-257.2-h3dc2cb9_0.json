@@ -1,0 +1,56 @@
+{
+  "build": "h3dc2cb9_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "zstd >=1.5.6,<1.6.0a0",
+    "liblzma >=5.6.3,<6.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "libcap >=2.71,<2.72.0a0",
+    "libgcrypt-lib >=1.11.0,<2.0a0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/libsystemd0-257.2-h3dc2cb9_0",
+  "files": [
+    "lib/libsystemd.so.0",
+    "lib/libsystemd.so.0.40.0"
+  ],
+  "fn": "libsystemd0-257.2-h3dc2cb9_0.conda",
+  "license": "LGPL-2.1-or-later",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/libsystemd0-257.2-h3dc2cb9_0",
+    "type": 3
+  },
+  "md5": "40c12fdd396297db83f789722027f5ed",
+  "name": "libsystemd0",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/libsystemd0-257.2-h3dc2cb9_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libsystemd.so.0",
+        "path_type": "softlink",
+        "sha256": "17c44017ec3f8fab1b9b3157ab738526a864e23748375d5e4d6dc345630b0b07",
+        "size_in_bytes": 1340144
+      },
+      {
+        "_path": "lib/libsystemd.so.0.40.0",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/systemd-split_1736376806778/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "17c44017ec3f8fab1b9b3157ab738526a864e23748375d5e4d6dc345630b0b07",
+        "sha256_in_prefix": "1b33f178d57b1894e298318b5777c9a76c05c6a05a3ef95474bf348a06144eb9",
+        "size_in_bytes": 1340144
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "03f532cae9ca0417b29ead19490a9fa0fa5e6ad73f1bfc7ea0d4d3bd4c41156e",
+  "size": 487652,
+  "subdir": "linux-64",
+  "timestamp": 1736377129000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-257.2-h3dc2cb9_0.conda",
+  "version": "257.2"
+}

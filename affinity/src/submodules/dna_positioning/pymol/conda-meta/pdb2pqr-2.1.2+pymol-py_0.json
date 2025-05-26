@@ -1,0 +1,991 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/schrodinger/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/pdb2pqr-2.1.2+pymol-py_0",
+  "files": [
+    "lib/python3.11/site-packages/extensions/__init__.py",
+    "lib/python3.11/site-packages/extensions/chi.py",
+    "lib/python3.11/site-packages/extensions/contact.py",
+    "lib/python3.11/site-packages/extensions/hbond.py",
+    "lib/python3.11/site-packages/extensions/newresinter.py",
+    "lib/python3.11/site-packages/extensions/rama.py",
+    "lib/python3.11/site-packages/extensions/resinter.py",
+    "lib/python3.11/site-packages/extensions/salt.py",
+    "lib/python3.11/site-packages/extensions/summary.py",
+    "lib/python3.11/site-packages/pdb2pqr.py",
+    "lib/python3.11/site-packages/propka30/Source/__init__.py",
+    "lib/python3.11/site-packages/propka30/Source/bonds.py",
+    "lib/python3.11/site-packages/propka30/Source/calculator.py",
+    "lib/python3.11/site-packages/propka30/Source/chain.py",
+    "lib/python3.11/site-packages/propka30/Source/compare.py",
+    "lib/python3.11/site-packages/propka30/Source/corresponding_atoms.py",
+    "lib/python3.11/site-packages/propka30/Source/coupled_residues.py",
+    "lib/python3.11/site-packages/propka30/Source/debug.py",
+    "lib/python3.11/site-packages/propka30/Source/determinant.py",
+    "lib/python3.11/site-packages/propka30/Source/determinants.py",
+    "lib/python3.11/site-packages/propka30/Source/ions.list",
+    "lib/python3.11/site-packages/propka30/Source/iterative.py",
+    "lib/python3.11/site-packages/propka30/Source/lib.py",
+    "lib/python3.11/site-packages/propka30/Source/ligand.py",
+    "lib/python3.11/site-packages/propka30/Source/mutate.py",
+    "lib/python3.11/site-packages/propka30/Source/output.py",
+    "lib/python3.11/site-packages/propka30/Source/parameters.py",
+    "lib/python3.11/site-packages/propka30/Source/parameters_new.py",
+    "lib/python3.11/site-packages/propka30/Source/parameters_std.py",
+    "lib/python3.11/site-packages/propka30/Source/pdb.py",
+    "lib/python3.11/site-packages/propka30/Source/protein.py",
+    "lib/python3.11/site-packages/propka30/Source/protonate.py",
+    "lib/python3.11/site-packages/propka30/Source/protonator.py",
+    "lib/python3.11/site-packages/propka30/Source/residue.py",
+    "lib/python3.11/site-packages/propka30/Source/rotate.py",
+    "lib/python3.11/site-packages/propka30/Source/vector_algebra.py",
+    "lib/python3.11/site-packages/propka30/Source/version.py",
+    "lib/python3.11/site-packages/propka30/__init__.py",
+    "lib/python3.11/site-packages/propka30/compare.py",
+    "lib/python3.11/site-packages/propka30/experiment.py",
+    "lib/python3.11/site-packages/propka30/propka.py",
+    "lib/python3.11/site-packages/propka30/propka_det.py",
+    "lib/python3.11/site-packages/propka30/propka_gui.py",
+    "lib/python3.11/site-packages/propka30/propka_mut.py",
+    "lib/python3.11/site-packages/propka30/propka_pdb.py",
+    "lib/python3.11/site-packages/src/__init__.py",
+    "lib/python3.11/site-packages/src/aa.py",
+    "lib/python3.11/site-packages/src/aconf.py",
+    "lib/python3.11/site-packages/src/dat/AA.xml",
+    "lib/python3.11/site-packages/src/dat/AMBER.DAT",
+    "lib/python3.11/site-packages/src/dat/AMBER.names",
+    "lib/python3.11/site-packages/src/dat/CHARMM.DAT",
+    "lib/python3.11/site-packages/src/dat/CHARMM.names",
+    "lib/python3.11/site-packages/src/dat/HYDROGENS.xml",
+    "lib/python3.11/site-packages/src/dat/NA.xml",
+    "lib/python3.11/site-packages/src/dat/PARSE.DAT",
+    "lib/python3.11/site-packages/src/dat/PARSE.names",
+    "lib/python3.11/site-packages/src/dat/PATCHES.xml",
+    "lib/python3.11/site-packages/src/dat/PEOEPB.DAT",
+    "lib/python3.11/site-packages/src/dat/PEOEPB.names",
+    "lib/python3.11/site-packages/src/dat/SWANSON.DAT",
+    "lib/python3.11/site-packages/src/dat/SWANSON.names",
+    "lib/python3.11/site-packages/src/dat/TOPOLOGY.xml",
+    "lib/python3.11/site-packages/src/dat/TYL06.DAT",
+    "lib/python3.11/site-packages/src/dat/TYL06.names",
+    "lib/python3.11/site-packages/src/definitions.py",
+    "lib/python3.11/site-packages/src/errors.py",
+    "lib/python3.11/site-packages/src/forcefield.py",
+    "lib/python3.11/site-packages/src/hydrogens.py",
+    "lib/python3.11/site-packages/src/inputgen.py",
+    "lib/python3.11/site-packages/src/na.py",
+    "lib/python3.11/site-packages/src/pdb.py",
+    "lib/python3.11/site-packages/src/protein.py",
+    "lib/python3.11/site-packages/src/psize.py",
+    "lib/python3.11/site-packages/src/quatfit.py",
+    "lib/python3.11/site-packages/src/routines.py",
+    "lib/python3.11/site-packages/src/server.py",
+    "lib/python3.11/site-packages/src/structures.py",
+    "lib/python3.11/site-packages/src/topology.py",
+    "lib/python3.11/site-packages/src/utilities.py",
+    "lib/python3.11/site-packages/extensions/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/chi.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/contact.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/hbond.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/newresinter.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/rama.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/resinter.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/salt.cpython-311.pyc",
+    "lib/python3.11/site-packages/extensions/__pycache__/summary.cpython-311.pyc",
+    "lib/python3.11/site-packages/__pycache__/pdb2pqr.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/bonds.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/calculator.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/chain.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/compare.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/corresponding_atoms.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/coupled_residues.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/debug.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/determinant.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/determinants.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/iterative.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/lib.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/ligand.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/mutate.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/output.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/parameters.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/parameters_new.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/parameters_std.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/pdb.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/protein.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/protonate.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/protonator.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/residue.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/rotate.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/vector_algebra.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/Source/__pycache__/version.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/compare.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/experiment.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/propka.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/propka_det.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/propka_gui.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/propka_mut.cpython-311.pyc",
+    "lib/python3.11/site-packages/propka30/__pycache__/propka_pdb.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/aa.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/aconf.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/definitions.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/errors.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/forcefield.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/hydrogens.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/inputgen.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/na.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/pdb.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/protein.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/psize.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/quatfit.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/routines.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/server.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/structures.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/topology.cpython-311.pyc",
+    "lib/python3.11/site-packages/src/__pycache__/utilities.cpython-311.pyc",
+    "bin/pdb2pqr"
+  ],
+  "fn": "pdb2pqr-2.1.2+pymol-py_0.tar.bz2",
+  "license": "BSD-like",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/pdb2pqr-2.1.2+pymol-py_0",
+    "type": 3
+  },
+  "md5": "b01ccefe281fdb59da89752ca1a4413b",
+  "name": "pdb2pqr",
+  "noarch": "python",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/pdb2pqr-2.1.2+pymol-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/extensions/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "663adb034d4b314f2eeb5ee33b71e6ee7b72586382194344a06f600a522af9d0",
+        "sha256_in_prefix": "663adb034d4b314f2eeb5ee33b71e6ee7b72586382194344a06f600a522af9d0",
+        "size_in_bytes": 4630
+      },
+      {
+        "_path": "site-packages/extensions/chi.py",
+        "path_type": "hardlink",
+        "sha256": "b69051cf968f7da81890342fbc177561572764947b64b35deb20986af50de7eb",
+        "sha256_in_prefix": "b69051cf968f7da81890342fbc177561572764947b64b35deb20986af50de7eb",
+        "size_in_bytes": 1941
+      },
+      {
+        "_path": "site-packages/extensions/contact.py",
+        "path_type": "hardlink",
+        "sha256": "8a60e59198205d5966092a05e437e511ee928175b99a00503f84e20af3e8c0c6",
+        "sha256_in_prefix": "8a60e59198205d5966092a05e437e511ee928175b99a00503f84e20af3e8c0c6",
+        "size_in_bytes": 2843
+      },
+      {
+        "_path": "site-packages/extensions/hbond.py",
+        "path_type": "hardlink",
+        "sha256": "bd87db607b1719990ed7e18d3d364a12269d3a39e8909600deec78e185294723",
+        "sha256_in_prefix": "bd87db607b1719990ed7e18d3d364a12269d3a39e8909600deec78e185294723",
+        "size_in_bytes": 6986
+      },
+      {
+        "_path": "site-packages/extensions/newresinter.py",
+        "path_type": "hardlink",
+        "sha256": "3716bec5ffed36c72f7164474acdcb2b0f31aaedbe5ba812b7b832701481392e",
+        "sha256_in_prefix": "3716bec5ffed36c72f7164474acdcb2b0f31aaedbe5ba812b7b832701481392e",
+        "size_in_bytes": 13553
+      },
+      {
+        "_path": "site-packages/extensions/rama.py",
+        "path_type": "hardlink",
+        "sha256": "5c60f341e9016f850bbcbfd71596a17152096bfbd435382fca4eca9c81f1be10",
+        "sha256_in_prefix": "5c60f341e9016f850bbcbfd71596a17152096bfbd435382fca4eca9c81f1be10",
+        "size_in_bytes": 3339
+      },
+      {
+        "_path": "site-packages/extensions/resinter.py",
+        "path_type": "hardlink",
+        "sha256": "13fb79c26a978ada740e419b9b57822475709a39dd6c32ab020b03821f1cff93",
+        "sha256_in_prefix": "13fb79c26a978ada740e419b9b57822475709a39dd6c32ab020b03821f1cff93",
+        "size_in_bytes": 12513
+      },
+      {
+        "_path": "site-packages/extensions/salt.py",
+        "path_type": "hardlink",
+        "sha256": "eb0aac41e9ec6529c85f822061dc8cb7b8926c79599aeca0d705935edc0a6ea9",
+        "sha256_in_prefix": "eb0aac41e9ec6529c85f822061dc8cb7b8926c79599aeca0d705935edc0a6ea9",
+        "size_in_bytes": 3056
+      },
+      {
+        "_path": "site-packages/extensions/summary.py",
+        "path_type": "hardlink",
+        "sha256": "86f88b729a2215422e300f5689a6c314be328d5b057dc1d64339ea0fc54f914b",
+        "sha256_in_prefix": "86f88b729a2215422e300f5689a6c314be328d5b057dc1d64339ea0fc54f914b",
+        "size_in_bytes": 944
+      },
+      {
+        "_path": "site-packages/pdb2pqr.py",
+        "path_type": "hardlink",
+        "sha256": "4c49d6ee8b7adcfe2b374e8d5813c64bf429f33e705eda29d1adf89ffe0e0426",
+        "sha256_in_prefix": "4c49d6ee8b7adcfe2b374e8d5813c64bf429f33e705eda29d1adf89ffe0e0426",
+        "size_in_bytes": 33881
+      },
+      {
+        "_path": "site-packages/propka30/Source/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a16e6690ce3a8a7a5e0b3597f506ffcea0ea7082e43bd413097698913767b522",
+        "sha256_in_prefix": "a16e6690ce3a8a7a5e0b3597f506ffcea0ea7082e43bd413097698913767b522",
+        "size_in_bytes": 2599
+      },
+      {
+        "_path": "site-packages/propka30/Source/bonds.py",
+        "path_type": "hardlink",
+        "sha256": "205c2427404f1e3eae3626c3666b916b948bb05de1b26493a7f6aade17ce7584",
+        "sha256_in_prefix": "205c2427404f1e3eae3626c3666b916b948bb05de1b26493a7f6aade17ce7584",
+        "size_in_bytes": 20907
+      },
+      {
+        "_path": "site-packages/propka30/Source/calculator.py",
+        "path_type": "hardlink",
+        "sha256": "a34f085ada3b4f7f6f9570d6414fb315c2c315800a4e5ee44bd52975e5aaf9b8",
+        "sha256_in_prefix": "a34f085ada3b4f7f6f9570d6414fb315c2c315800a4e5ee44bd52975e5aaf9b8",
+        "size_in_bytes": 19235
+      },
+      {
+        "_path": "site-packages/propka30/Source/chain.py",
+        "path_type": "hardlink",
+        "sha256": "88c79d19ff014bf59f87ce0323d5846be9d8a0d0dd234f87a9c41722a2c58013",
+        "sha256_in_prefix": "88c79d19ff014bf59f87ce0323d5846be9d8a0d0dd234f87a9c41722a2c58013",
+        "size_in_bytes": 14975
+      },
+      {
+        "_path": "site-packages/propka30/Source/compare.py",
+        "path_type": "hardlink",
+        "sha256": "c0217b31d1ef5b8536b1d0650c18faeb318b7bf93fc9a04313af66019cd75213",
+        "sha256_in_prefix": "c0217b31d1ef5b8536b1d0650c18faeb318b7bf93fc9a04313af66019cd75213",
+        "size_in_bytes": 12522
+      },
+      {
+        "_path": "site-packages/propka30/Source/corresponding_atoms.py",
+        "path_type": "hardlink",
+        "sha256": "65986abab63d214a4b6867fb8d09b1c846fec110ef2a4bbd26ee6d48053f4614",
+        "sha256_in_prefix": "65986abab63d214a4b6867fb8d09b1c846fec110ef2a4bbd26ee6d48053f4614",
+        "size_in_bytes": 6395
+      },
+      {
+        "_path": "site-packages/propka30/Source/coupled_residues.py",
+        "path_type": "hardlink",
+        "sha256": "70017e6f138dfa732646aef1f736e28def5bca7172c18a5df4cd02498c552dd9",
+        "sha256_in_prefix": "70017e6f138dfa732646aef1f736e28def5bca7172c18a5df4cd02498c552dd9",
+        "size_in_bytes": 16433
+      },
+      {
+        "_path": "site-packages/propka30/Source/debug.py",
+        "path_type": "hardlink",
+        "sha256": "ac73043ec5caa5b4ca186379be947ba117c45dc388863a6e480de5f6a351444d",
+        "sha256_in_prefix": "ac73043ec5caa5b4ca186379be947ba117c45dc388863a6e480de5f6a351444d",
+        "size_in_bytes": 6876
+      },
+      {
+        "_path": "site-packages/propka30/Source/determinant.py",
+        "path_type": "hardlink",
+        "sha256": "a66bb518225890a18c29d1992f047efe4b0ded0d058c6e237627cb2578799c09",
+        "sha256_in_prefix": "a66bb518225890a18c29d1992f047efe4b0ded0d058c6e237627cb2578799c09",
+        "size_in_bytes": 2787
+      },
+      {
+        "_path": "site-packages/propka30/Source/determinants.py",
+        "path_type": "hardlink",
+        "sha256": "03daccc735c25ef75340c23d9b85392ee362926c9375f6f1a1c0eac46d63a287",
+        "sha256_in_prefix": "03daccc735c25ef75340c23d9b85392ee362926c9375f6f1a1c0eac46d63a287",
+        "size_in_bytes": 14037
+      },
+      {
+        "_path": "site-packages/propka30/Source/ions.list",
+        "path_type": "hardlink",
+        "sha256": "25d9bb0b4d0ccd5a0f6913fba0b34ebdc04511c94fcc3dc85cf0a2dda66fde7f",
+        "sha256_in_prefix": "25d9bb0b4d0ccd5a0f6913fba0b34ebdc04511c94fcc3dc85cf0a2dda66fde7f",
+        "size_in_bytes": 447
+      },
+      {
+        "_path": "site-packages/propka30/Source/iterative.py",
+        "path_type": "hardlink",
+        "sha256": "20e2e3b72fc806cba57e9ac5eef4cc892e746e82e1d6936dd5a7d30a15aac955",
+        "sha256_in_prefix": "20e2e3b72fc806cba57e9ac5eef4cc892e746e82e1d6936dd5a7d30a15aac955",
+        "size_in_bytes": 15380
+      },
+      {
+        "_path": "site-packages/propka30/Source/lib.py",
+        "path_type": "hardlink",
+        "sha256": "f38f7e89ffe8208338b40d22475eec67e48349867cde4a60847f77c250416d03",
+        "sha256_in_prefix": "f38f7e89ffe8208338b40d22475eec67e48349867cde4a60847f77c250416d03",
+        "size_in_bytes": 26530
+      },
+      {
+        "_path": "site-packages/propka30/Source/ligand.py",
+        "path_type": "hardlink",
+        "sha256": "0ad23d5e1c75a37dfc6e198f2356eef73ddf1ff672ce386907db8d760bff8f2a",
+        "sha256_in_prefix": "0ad23d5e1c75a37dfc6e198f2356eef73ddf1ff672ce386907db8d760bff8f2a",
+        "size_in_bytes": 17624
+      },
+      {
+        "_path": "site-packages/propka30/Source/mutate.py",
+        "path_type": "hardlink",
+        "sha256": "32ede6a4e73affcc45f28f49c4131a4ac37449bcd688a6113add35fb5a2ac0db",
+        "sha256_in_prefix": "32ede6a4e73affcc45f28f49c4131a4ac37449bcd688a6113add35fb5a2ac0db",
+        "size_in_bytes": 53421
+      },
+      {
+        "_path": "site-packages/propka30/Source/output.py",
+        "path_type": "hardlink",
+        "sha256": "db28fdf0cfc3ae2613ef76690c3467c7694c76a9ece4a0d944bf47f8fa77f50a",
+        "sha256_in_prefix": "db28fdf0cfc3ae2613ef76690c3467c7694c76a9ece4a0d944bf47f8fa77f50a",
+        "size_in_bytes": 18477
+      },
+      {
+        "_path": "site-packages/propka30/Source/parameters.py",
+        "path_type": "hardlink",
+        "sha256": "65fae6fc746688eb09ea363df71fd1e1eaed0840fcef94d78b01c45213fec08d",
+        "sha256_in_prefix": "65fae6fc746688eb09ea363df71fd1e1eaed0840fcef94d78b01c45213fec08d",
+        "size_in_bytes": 55873
+      },
+      {
+        "_path": "site-packages/propka30/Source/parameters_new.py",
+        "path_type": "hardlink",
+        "sha256": "3989633877b2e331fbabf1124c64cdf9412f75e8890e7255d182b6b8028ad09d",
+        "sha256_in_prefix": "3989633877b2e331fbabf1124c64cdf9412f75e8890e7255d182b6b8028ad09d",
+        "size_in_bytes": 16702
+      },
+      {
+        "_path": "site-packages/propka30/Source/parameters_std.py",
+        "path_type": "hardlink",
+        "sha256": "90f1fc8c7a071f584791ba002bf10521b0ef7da81d76e1e86e3d204749c0c48e",
+        "sha256_in_prefix": "90f1fc8c7a071f584791ba002bf10521b0ef7da81d76e1e86e3d204749c0c48e",
+        "size_in_bytes": 16300
+      },
+      {
+        "_path": "site-packages/propka30/Source/pdb.py",
+        "path_type": "hardlink",
+        "sha256": "82a2afa007eabe75cd0c7eea2f020e224edc82fe1181838ff2fffdbba8c8d6bd",
+        "sha256_in_prefix": "82a2afa007eabe75cd0c7eea2f020e224edc82fe1181838ff2fffdbba8c8d6bd",
+        "size_in_bytes": 19340
+      },
+      {
+        "_path": "site-packages/propka30/Source/protein.py",
+        "path_type": "hardlink",
+        "sha256": "de3d016c9eecb7e638f16b868ee1af3e3c8950a1b8da8e0f26a71df89e019ce4",
+        "sha256_in_prefix": "de3d016c9eecb7e638f16b868ee1af3e3c8950a1b8da8e0f26a71df89e019ce4",
+        "size_in_bytes": 35576
+      },
+      {
+        "_path": "site-packages/propka30/Source/protonate.py",
+        "path_type": "hardlink",
+        "sha256": "cef4ca5d736a888302ad96fd37742add9e0b4adf235b1f1252b303c587acd5f5",
+        "sha256_in_prefix": "cef4ca5d736a888302ad96fd37742add9e0b4adf235b1f1252b303c587acd5f5",
+        "size_in_bytes": 19570
+      },
+      {
+        "_path": "site-packages/propka30/Source/protonator.py",
+        "path_type": "hardlink",
+        "sha256": "7b1fc3ca39aab976839184ed3da6443512af1bf3e62132aa40f104a8d6f9fcd0",
+        "sha256_in_prefix": "7b1fc3ca39aab976839184ed3da6443512af1bf3e62132aa40f104a8d6f9fcd0",
+        "size_in_bytes": 26541
+      },
+      {
+        "_path": "site-packages/propka30/Source/residue.py",
+        "path_type": "hardlink",
+        "sha256": "a373c724faf84e0840c4dfe35742791703a35ca65cd9912410e6b593d9600a98",
+        "sha256_in_prefix": "a373c724faf84e0840c4dfe35742791703a35ca65cd9912410e6b593d9600a98",
+        "size_in_bytes": 31232
+      },
+      {
+        "_path": "site-packages/propka30/Source/rotate.py",
+        "path_type": "hardlink",
+        "sha256": "8b759485e3997a5bb9f99dd6a3e541bb3901488ea12c8eca0701d62a704081a9",
+        "sha256_in_prefix": "8b759485e3997a5bb9f99dd6a3e541bb3901488ea12c8eca0701d62a704081a9",
+        "size_in_bytes": 13166
+      },
+      {
+        "_path": "site-packages/propka30/Source/vector_algebra.py",
+        "path_type": "hardlink",
+        "sha256": "b1735e8e128c44b26a170d76135690f6f78cac7aff27c52090dab8cede6fd195",
+        "sha256_in_prefix": "b1735e8e128c44b26a170d76135690f6f78cac7aff27c52090dab8cede6fd195",
+        "size_in_bytes": 12136
+      },
+      {
+        "_path": "site-packages/propka30/Source/version.py",
+        "path_type": "hardlink",
+        "sha256": "806446cd5e2cb37f3f149846256b39cf42a49415037a05e639e8e6fbb55dd61a",
+        "sha256_in_prefix": "806446cd5e2cb37f3f149846256b39cf42a49415037a05e639e8e6fbb55dd61a",
+        "size_in_bytes": 59739
+      },
+      {
+        "_path": "site-packages/propka30/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6cb5bd328276155dd37e3ac068e70beceed8b79777df34d86a7f919bd8119463",
+        "sha256_in_prefix": "6cb5bd328276155dd37e3ac068e70beceed8b79777df34d86a7f919bd8119463",
+        "size_in_bytes": 2404
+      },
+      {
+        "_path": "site-packages/propka30/compare.py",
+        "path_type": "hardlink",
+        "sha256": "1b387bb51a0fe05928e648801ef4f3a239dd9e52c5947af6aafd4123d2afb689",
+        "sha256_in_prefix": "1b387bb51a0fe05928e648801ef4f3a239dd9e52c5947af6aafd4123d2afb689",
+        "size_in_bytes": 7216
+      },
+      {
+        "_path": "site-packages/propka30/experiment.py",
+        "path_type": "hardlink",
+        "sha256": "c0236e8e7d23039645e7fedcb38457d0d855e03beb069edb864dfbc73bcbd3d9",
+        "sha256_in_prefix": "c0236e8e7d23039645e7fedcb38457d0d855e03beb069edb864dfbc73bcbd3d9",
+        "size_in_bytes": 12624
+      },
+      {
+        "_path": "site-packages/propka30/propka.py",
+        "path_type": "hardlink",
+        "sha256": "366119d5c1dd7df78948cc6294f7bb25f7876469ac4d571b06722e7fd1eadcf7",
+        "sha256_in_prefix": "366119d5c1dd7df78948cc6294f7bb25f7876469ac4d571b06722e7fd1eadcf7",
+        "size_in_bytes": 3039
+      },
+      {
+        "_path": "site-packages/propka30/propka_det.py",
+        "path_type": "hardlink",
+        "sha256": "dbcf3e1835c8764ca39a92f9f1b96dc54a4d1f5d5c16edea5587ff49b2aaa879",
+        "sha256_in_prefix": "dbcf3e1835c8764ca39a92f9f1b96dc54a4d1f5d5c16edea5587ff49b2aaa879",
+        "size_in_bytes": 3579
+      },
+      {
+        "_path": "site-packages/propka30/propka_gui.py",
+        "path_type": "hardlink",
+        "sha256": "d682c052cc6d12f72a9effaa65244f36a1526c3fa3c910ea83fd1d8adae3783a",
+        "sha256_in_prefix": "d682c052cc6d12f72a9effaa65244f36a1526c3fa3c910ea83fd1d8adae3783a",
+        "size_in_bytes": 4022
+      },
+      {
+        "_path": "site-packages/propka30/propka_mut.py",
+        "path_type": "hardlink",
+        "sha256": "8e96461335979d31a26026d28c3b91b32cda42f6b13fd2506f992820d42eee8b",
+        "sha256_in_prefix": "8e96461335979d31a26026d28c3b91b32cda42f6b13fd2506f992820d42eee8b",
+        "size_in_bytes": 4098
+      },
+      {
+        "_path": "site-packages/propka30/propka_pdb.py",
+        "path_type": "hardlink",
+        "sha256": "3e53ffe91e7e6edbc9e5019a6c68da3c4011c32a3b069b79c64fdd9c606bd3fa",
+        "sha256_in_prefix": "3e53ffe91e7e6edbc9e5019a6c68da3c4011c32a3b069b79c64fdd9c606bd3fa",
+        "size_in_bytes": 2978
+      },
+      {
+        "_path": "site-packages/src/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/src/aa.py",
+        "path_type": "hardlink",
+        "sha256": "b936e8aa0ba4aa4b72d2f64aa90e0f1e5627c0cecc3af4d5c3850d359ce56114",
+        "sha256_in_prefix": "b936e8aa0ba4aa4b72d2f64aa90e0f1e5627c0cecc3af4d5c3850d359ce56114",
+        "size_in_bytes": 25123
+      },
+      {
+        "_path": "site-packages/src/aconf.py",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "154b9d0fe1bc2984bcc1bd78c31a744db9c12a582af08751ef85fcdca86cb28c",
+        "sha256_in_prefix": "5a82c67727988a7eaee351b93defcbaa84a63ca7b6395c86d9ed001657045430",
+        "size_in_bytes": 3193
+      },
+      {
+        "_path": "site-packages/src/dat/AA.xml",
+        "path_type": "hardlink",
+        "sha256": "298544f38f0fc8b7858afb1749f018c982da03ecd333cafbe672352b45ca6627",
+        "sha256_in_prefix": "298544f38f0fc8b7858afb1749f018c982da03ecd333cafbe672352b45ca6627",
+        "size_in_bytes": 58175
+      },
+      {
+        "_path": "site-packages/src/dat/AMBER.DAT",
+        "path_type": "hardlink",
+        "sha256": "365f5c504b8ecf77f15fc58f2c5a1730054bf26a4ba006c3b9d3ebda0fea64e8",
+        "sha256_in_prefix": "365f5c504b8ecf77f15fc58f2c5a1730054bf26a4ba006c3b9d3ebda0fea64e8",
+        "size_in_bytes": 60679
+      },
+      {
+        "_path": "site-packages/src/dat/AMBER.names",
+        "path_type": "hardlink",
+        "sha256": "2bb8c32f6ffcc51be462fb412c2489054accca82b3b1b01c9480403f7adda120",
+        "sha256_in_prefix": "2bb8c32f6ffcc51be462fb412c2489054accca82b3b1b01c9480403f7adda120",
+        "size_in_bytes": 2290
+      },
+      {
+        "_path": "site-packages/src/dat/CHARMM.DAT",
+        "path_type": "hardlink",
+        "sha256": "f04c4bc285c1fa405915ea4bf85c2b906e1cdcf660840a8cb52047ba62531bc4",
+        "sha256_in_prefix": "f04c4bc285c1fa405915ea4bf85c2b906e1cdcf660840a8cb52047ba62531bc4",
+        "size_in_bytes": 64231
+      },
+      {
+        "_path": "site-packages/src/dat/CHARMM.names",
+        "path_type": "hardlink",
+        "sha256": "eeb64503f3864c0ab9eb00110693eda53cea76371bc4d1c3193e686cb54e62a7",
+        "sha256_in_prefix": "eeb64503f3864c0ab9eb00110693eda53cea76371bc4d1c3193e686cb54e62a7",
+        "size_in_bytes": 6846
+      },
+      {
+        "_path": "site-packages/src/dat/HYDROGENS.xml",
+        "path_type": "hardlink",
+        "sha256": "e20e87d088c31f708ab51423280d3db8390136249dac500c23b219eebad020b3",
+        "sha256_in_prefix": "e20e87d088c31f708ab51423280d3db8390136249dac500c23b219eebad020b3",
+        "size_in_bytes": 4484
+      },
+      {
+        "_path": "site-packages/src/dat/NA.xml",
+        "path_type": "hardlink",
+        "sha256": "ebf73475aed630605b14a4de46d2f71198a3a23d138c42707f62765408dd520d",
+        "sha256_in_prefix": "ebf73475aed630605b14a4de46d2f71198a3a23d138c42707f62765408dd520d",
+        "size_in_bytes": 33840
+      },
+      {
+        "_path": "site-packages/src/dat/PARSE.DAT",
+        "path_type": "hardlink",
+        "sha256": "3116d3998f92ec3376742f53d66704f7e0f14df809dd02f0e58218be22fac129",
+        "sha256_in_prefix": "3116d3998f92ec3376742f53d66704f7e0f14df809dd02f0e58218be22fac129",
+        "size_in_bytes": 24406
+      },
+      {
+        "_path": "site-packages/src/dat/PARSE.names",
+        "path_type": "hardlink",
+        "sha256": "ccacd4c7da8e5e6ce58e05599f4ec63266f67b508c33373f3a0bc53e2a92a7c8",
+        "sha256_in_prefix": "ccacd4c7da8e5e6ce58e05599f4ec63266f67b508c33373f3a0bc53e2a92a7c8",
+        "size_in_bytes": 5692
+      },
+      {
+        "_path": "site-packages/src/dat/PATCHES.xml",
+        "path_type": "hardlink",
+        "sha256": "7447c67d025142cdf5932627c21b97a01d7dc9f78f054eb4da38db7c92471d1a",
+        "sha256_in_prefix": "7447c67d025142cdf5932627c21b97a01d7dc9f78f054eb4da38db7c92471d1a",
+        "size_in_bytes": 14806
+      },
+      {
+        "_path": "site-packages/src/dat/PEOEPB.DAT",
+        "path_type": "hardlink",
+        "sha256": "9fdbe6eb5e7ccbffec942834d75e4e3dfe1192d3ab5b27b244cb0c9b8c22c250",
+        "sha256_in_prefix": "9fdbe6eb5e7ccbffec942834d75e4e3dfe1192d3ab5b27b244cb0c9b8c22c250",
+        "size_in_bytes": 29525
+      },
+      {
+        "_path": "site-packages/src/dat/PEOEPB.names",
+        "path_type": "hardlink",
+        "sha256": "17ff8f2ea192448fda9379a48c11f7bb15012018985457491b3629cda3122149",
+        "sha256_in_prefix": "17ff8f2ea192448fda9379a48c11f7bb15012018985457491b3629cda3122149",
+        "size_in_bytes": 1672
+      },
+      {
+        "_path": "site-packages/src/dat/SWANSON.DAT",
+        "path_type": "hardlink",
+        "sha256": "3aea040a5ebe8f19fb317cd00d062242e4cb4014be60073357c0e7adb279aeaf",
+        "sha256_in_prefix": "3aea040a5ebe8f19fb317cd00d062242e4cb4014be60073357c0e7adb279aeaf",
+        "size_in_bytes": 34200
+      },
+      {
+        "_path": "site-packages/src/dat/SWANSON.names",
+        "path_type": "hardlink",
+        "sha256": "03460f8ceffef8393acaf05b8f7d7a32156c221e82710a690a76485595793f72",
+        "sha256_in_prefix": "03460f8ceffef8393acaf05b8f7d7a32156c221e82710a690a76485595793f72",
+        "size_in_bytes": 1185
+      },
+      {
+        "_path": "site-packages/src/dat/TOPOLOGY.xml",
+        "path_type": "hardlink",
+        "sha256": "cfa3544e25aff47d766fc48651758a350357d7fabdf534ce46e97ba36c6cd7f0",
+        "sha256_in_prefix": "cfa3544e25aff47d766fc48651758a350357d7fabdf534ce46e97ba36c6cd7f0",
+        "size_in_bytes": 62119
+      },
+      {
+        "_path": "site-packages/src/dat/TYL06.DAT",
+        "path_type": "hardlink",
+        "sha256": "8d65384053e4e6102907fe8c769e6802a15717d89ab001bb5505aab899522c92",
+        "sha256_in_prefix": "8d65384053e4e6102907fe8c769e6802a15717d89ab001bb5505aab899522c92",
+        "size_in_bytes": 97563
+      },
+      {
+        "_path": "site-packages/src/dat/TYL06.names",
+        "path_type": "hardlink",
+        "sha256": "c3f23ede163828244cdc3ccf8fdd0de66b093726c9aa8c6b9237873ba47f7054",
+        "sha256_in_prefix": "c3f23ede163828244cdc3ccf8fdd0de66b093726c9aa8c6b9237873ba47f7054",
+        "size_in_bytes": 1993
+      },
+      {
+        "_path": "site-packages/src/definitions.py",
+        "path_type": "hardlink",
+        "sha256": "49509231041c0bbb5f51f8705753cd16dad0658348f4818c2fc79b5a6d2f868f",
+        "sha256_in_prefix": "49509231041c0bbb5f51f8705753cd16dad0658348f4818c2fc79b5a6d2f868f",
+        "size_in_bytes": 13634
+      },
+      {
+        "_path": "site-packages/src/errors.py",
+        "path_type": "hardlink",
+        "sha256": "ee04321cb5ece13cf6f945fb89d38a24e3fa0731d7097c881c90fea356b71d41",
+        "sha256_in_prefix": "ee04321cb5ece13cf6f945fb89d38a24e3fa0731d7097c881c90fea356b71d41",
+        "size_in_bytes": 3630
+      },
+      {
+        "_path": "site-packages/src/forcefield.py",
+        "path_type": "hardlink",
+        "sha256": "324d705b40e1b2572cae221fe7e42b8c7ec429bdd57f17aa05af6e35d5e9f82c",
+        "sha256_in_prefix": "324d705b40e1b2572cae221fe7e42b8c7ec429bdd57f17aa05af6e35d5e9f82c",
+        "size_in_bytes": 35063
+      },
+      {
+        "_path": "site-packages/src/hydrogens.py",
+        "path_type": "hardlink",
+        "sha256": "50d59be91dee98f177e91cbda12a423895f42524632dd4ae45af7573db6ca23c",
+        "sha256_in_prefix": "50d59be91dee98f177e91cbda12a423895f42524632dd4ae45af7573db6ca23c",
+        "size_in_bytes": 104294
+      },
+      {
+        "_path": "site-packages/src/inputgen.py",
+        "path_type": "hardlink",
+        "sha256": "09ec4ef679149dee5cb982301a363a1e5db28cedfffe5d23b3e97a845ad17cbc",
+        "sha256_in_prefix": "09ec4ef679149dee5cb982301a363a1e5db28cedfffe5d23b3e97a845ad17cbc",
+        "size_in_bytes": 18194
+      },
+      {
+        "_path": "site-packages/src/na.py",
+        "path_type": "hardlink",
+        "sha256": "1c26103529d03e7004b6c6e9efdf319915a616aeee32357811c840a56f2e8758",
+        "sha256_in_prefix": "1c26103529d03e7004b6c6e9efdf319915a616aeee32357811c840a56f2e8758",
+        "size_in_bytes": 9418
+      },
+      {
+        "_path": "site-packages/src/pdb.py",
+        "path_type": "hardlink",
+        "sha256": "09b83677f9fa6948f11327d81a582fb10512063ff1deef34908781e22dbbb954",
+        "sha256_in_prefix": "09b83677f9fa6948f11327d81a582fb10512063ff1deef34908781e22dbbb954",
+        "size_in_bytes": 97161
+      },
+      {
+        "_path": "site-packages/src/protein.py",
+        "path_type": "hardlink",
+        "sha256": "8c793d94da42abf5c4a871ec685873c8fef997cb89e1b38c12ae170c6a9833bc",
+        "sha256_in_prefix": "8c793d94da42abf5c4a871ec685873c8fef997cb89e1b38c12ae170c6a9833bc",
+        "size_in_bytes": 13758
+      },
+      {
+        "_path": "site-packages/src/psize.py",
+        "path_type": "hardlink",
+        "sha256": "e1a8c6e4a6c75f0435168863e8e65743753c8a788965943467f1cb790c67054d",
+        "sha256_in_prefix": "e1a8c6e4a6c75f0435168863e8e65743753c8a788965943467f1cb790c67054d",
+        "size_in_bytes": 18187
+      },
+      {
+        "_path": "site-packages/src/quatfit.py",
+        "path_type": "hardlink",
+        "sha256": "1d1ee6e3d207b2c8a8264f6eafca0ec4f2660fe00cf900e9bda17b2d1d9ec210",
+        "sha256_in_prefix": "1d1ee6e3d207b2c8a8264f6eafca0ec4f2660fe00cf900e9bda17b2d1d9ec210",
+        "size_in_bytes": 15574
+      },
+      {
+        "_path": "site-packages/src/routines.py",
+        "path_type": "hardlink",
+        "sha256": "d87200ca9479e506f6e9ba55e49e6be0546d96f81dd701d692afcea703087373",
+        "sha256_in_prefix": "d87200ca9479e506f6e9ba55e49e6be0546d96f81dd701d692afcea703087373",
+        "size_in_bytes": 69285
+      },
+      {
+        "_path": "site-packages/src/server.py",
+        "path_type": "hardlink",
+        "sha256": "f51aab2706f49787b76269569cb1d25c1245229952c0d92fa3e99c139b75dbc5",
+        "sha256_in_prefix": "f51aab2706f49787b76269569cb1d25c1245229952c0d92fa3e99c139b75dbc5",
+        "size_in_bytes": 18516
+      },
+      {
+        "_path": "site-packages/src/structures.py",
+        "path_type": "hardlink",
+        "sha256": "948968c11cbc8dd50b4baef6859b7d44fa2b71c896172014382396558602768d",
+        "sha256_in_prefix": "948968c11cbc8dd50b4baef6859b7d44fa2b71c896172014382396558602768d",
+        "size_in_bytes": 28758
+      },
+      {
+        "_path": "site-packages/src/topology.py",
+        "path_type": "hardlink",
+        "sha256": "b43da2692ba98537a45df3b30d7754e9386e1b4b5a2003f6e5d664a466977de6",
+        "sha256_in_prefix": "b43da2692ba98537a45df3b30d7754e9386e1b4b5a2003f6e5d664a466977de6",
+        "size_in_bytes": 14836
+      },
+      {
+        "_path": "site-packages/src/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "e0cf421a3bb3a2753fdea4997d71de752fd5f1d91f577833ec1d1a16ea64d49e",
+        "sha256_in_prefix": "e0cf421a3bb3a2753fdea4997d71de752fd5f1d91f577833ec1d1a16ea64d49e",
+        "size_in_bytes": 16786
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/chi.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/contact.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/hbond.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/newresinter.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/rama.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/resinter.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/salt.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/extensions/__pycache__/summary.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/__pycache__/pdb2pqr.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/bonds.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/calculator.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/chain.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/compare.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/corresponding_atoms.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/coupled_residues.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/debug.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/determinant.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/determinants.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/iterative.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/lib.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/ligand.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/mutate.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/output.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/parameters.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/parameters_new.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/parameters_std.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/pdb.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/protein.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/protonate.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/protonator.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/residue.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/rotate.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/vector_algebra.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/Source/__pycache__/version.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/compare.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/experiment.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/propka.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/propka_det.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/propka_gui.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/propka_mut.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/propka30/__pycache__/propka_pdb.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/aa.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/aconf.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/definitions.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/errors.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/forcefield.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/hydrogens.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/inputgen.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/na.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/pdb.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/protein.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/psize.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/quatfit.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/routines.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/server.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/structures.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/topology.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/src/__pycache__/utilities.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/pdb2pqr",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 241220,
+  "subdir": "noarch",
+  "timestamp": 1588156277000,
+  "url": "https://conda.anaconda.org/schrodinger/noarch/pdb2pqr-2.1.2+pymol-py_0.tar.bz2",
+  "version": "2.1.2+pymol"
+}

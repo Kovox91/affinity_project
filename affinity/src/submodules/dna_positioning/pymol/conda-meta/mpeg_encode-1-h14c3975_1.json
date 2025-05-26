@@ -1,0 +1,40 @@
+{
+  "build": "h14c3975_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/tmp/miniforge/pkgs/mpeg_encode-1-h14c3975_1",
+  "files": [
+    "bin/mpeg_encode.exe"
+  ],
+  "fn": "mpeg_encode-1-h14c3975_1.tar.bz2",
+  "license": "BSD-like",
+  "link": {
+    "source": "/tmp/miniforge/pkgs/mpeg_encode-1-h14c3975_1",
+    "type": 3
+  },
+  "md5": "a9f41c11a0ccec9bb2882a8f731ac342",
+  "name": "mpeg_encode",
+  "package_tarball_full_path": "/tmp/miniforge/pkgs/mpeg_encode-1-h14c3975_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/mpeg_encode.exe",
+        "path_type": "hardlink",
+        "sha256": "7d32c063b579942e50a3d9de5cf90ef00d11db3d2be19f16fd243461587df4fe",
+        "sha256_in_prefix": "7d32c063b579942e50a3d9de5cf90ef00d11db3d2be19f16fd243461587df4fe",
+        "size_in_bytes": 233336
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 108933,
+  "subdir": "linux-64",
+  "timestamp": 1520592626000,
+  "url": "https://conda.anaconda.org/schrodinger/linux-64/mpeg_encode-1-h14c3975_1.tar.bz2",
+  "version": "1"
+}

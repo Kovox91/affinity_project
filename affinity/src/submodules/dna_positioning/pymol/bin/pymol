@@ -1,0 +1,48 @@
+#!/bin/bash
+##
+## Portable and app-bundle-aware PyMOL launcher
+##
+
+get_prefix() {
+    # cd to $(dirname $(realpath $0))
+    L="$0"
+    while [[ -n "$L" ]]; do
+        N="`basename "$L"`"
+        cd "`dirname "$L"`"
+        L="`readlink "$N"`"
+    done
+    # now in $PREFIX/bin or $PREFIX/MacOS
+    cd ..
+    # now in $PREFIX
+    pwd
+}
+
+PREFIX="`get_prefix`"
+
+# sanity check for PyMOL variables
+if [[ -n "${PYMOL_PATH+1}" && -z "$PYMOL_DATA" ]]; then
+    PYMOL_DATA="$PYMOL_PATH/data"
+fi
+if [[ -n "${PYMOL_DATA+1}" && ! -d "$PYMOL_DATA/pmg_qt/styles" ]]; then
+    unset PYMOL_PATH
+    unset PYMOL_DATA
+fi
+
+for python in \
+    "$PREFIX/PyMOL.app/Contents/MacOS/python" \
+    "$PREFIX/MacOS/python" \
+    "$PREFIX/bin/python"
+do
+    if [[ -f "$python" ]]; then
+        unset PYTHONHOME
+        unset QT_PLUGIN_PATH
+
+        export PYTHONEXECUTABLE="$PREFIX/bin/python"
+
+        exec "$python" -m pymol "$@"
+    fi
+done
+
+# fallback, use python from environment
+export PYMOL_PATH="$PREFIX/share/pymol"
+exec python "$PREFIX"/lib/python*/site-packages/pymol/__init__.py "$@"
