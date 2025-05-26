@@ -11,7 +11,7 @@ RESIDUES_MUTANT = list(range(5, 19))
 # Utility: Get residues with full backbone atoms
 def get_residues_with_full_backbone(structure, chain_id, allowed_residues):
     full_res = []
-    for residue in structure[0][chain_id]:
+    for residue in structure[chain_id]:
         if residue.id[1] not in allowed_residues:
             continue
         if all(atom in residue for atom in BACKBONE_ATOMS):
@@ -21,7 +21,7 @@ def get_residues_with_full_backbone(structure, chain_id, allowed_residues):
 # Utility: Get ordered backbone atoms for selected residues
 def get_backbone_atoms_filtered(structure, chain_id, residue_ids):
     atoms = []
-    for residue in structure[0][chain_id]:
+    for residue in structure[chain_id]:
         if residue.id[1] not in residue_ids:
             continue
         if all(atom in residue for atom in BACKBONE_ATOMS):
@@ -31,8 +31,9 @@ def get_backbone_atoms_filtered(structure, chain_id, residue_ids):
 
 # Replace chains B and C in complex with mutant A and B
 def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_mutant, new_chain_id):
-    model_c = complex_struct[0]
-    model_m = mutant_struct[0]
+    model_c = complex_struct
+    model_m = mutant_struct
+    
     if chain_id_complex in model_c:
         model_c.detach_child(chain_id_complex)
     if chain_id_mutant in model_m:
@@ -49,10 +50,13 @@ for file in os.listdir(directory):
     # Load structures
     parser = PDBParser(QUIET=True)
     complex_structure = parser.get_structure("complex", "2ff0.pdb")
+    complex_structure = complex_structure[0]
     mutant_structure = parser.get_structure("mutant", "dna_pdbs/" + filename)
+    mutant_structure = mutant_structure[0]
 
     # Get residues with full backbone
     complex_res_B = set(get_residues_with_full_backbone(complex_structure, "B", RESIDUES_COMPLEX))
+
     mutant_res_A  = set(get_residues_with_full_backbone(mutant_structure, "A", RESIDUES_MUTANT))
 
     # Get backbone atoms
