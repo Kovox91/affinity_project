@@ -1,6 +1,3 @@
 [submodule "affinity/src/submodules/ATOMICA"]
-	path = affinity/src/submodules/ATOMICA
+	path = affinity_predictor/src/submodules/ATOMICA
 	url = https://github.com/mims-harvard/ATOMICA.git
-[submodule "affinity/src/submodules/PeSTo"]
-	path = affinity/src/submodules/PeSTo
-	url = https://github.com/LBM-EPFL/PeSTo.git
