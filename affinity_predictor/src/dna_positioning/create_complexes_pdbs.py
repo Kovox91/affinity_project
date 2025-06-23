@@ -1,6 +1,7 @@
 from Bio.PDB import PDBParser, PDBIO, Superimposer
 import sys
 import os
+from tqdm import tqdm
 
 # Constants
 BACKBONE_ATOMS = ["P", "O5'", "C5'", "C4'", "C3'", "O3'"]
@@ -44,14 +45,14 @@ def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_muta
 
 
 # DNA .pdb directory
-directory = os.fsencode("dna_pdbs")
-for file in os.listdir(directory):
+directory = os.fsencode("../../data/02_intermediate/dna_pdbs")
+parser = PDBParser(QUIET=True)
+complex_structure = parser.get_structure("complex", "2ff0.pdb")
+complex_structure = complex_structure[0]
+for file in tqdm(os.listdir(directory), desc="Creating Complex PDBs"):
     filename = os.fsdecode(file)
     # Load structures
-    parser = PDBParser(QUIET=True)
-    complex_structure = parser.get_structure("complex", "2ff0.pdb")
-    complex_structure = complex_structure[0]
-    mutant_structure = parser.get_structure("mutant", "dna_pdbs/" + filename)
+    mutant_structure = parser.get_structure("mutant", "../../data/02_intermediate/dna_pdbs" + filename)
     mutant_structure = mutant_structure[0]
 
     # Get residues with full backbone
@@ -77,5 +78,4 @@ for file in os.listdir(directory):
     # Save output
     io = PDBIO()
     io.set_structure(complex_structure)
-    io.save("complexes_pdbs/" + filename)
-    print("Saved: " + filename)
+    io.save("../../data/02_intermediate/complexes_pdbs" + filename)
