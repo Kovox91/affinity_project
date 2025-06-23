@@ -20,9 +20,6 @@ def collect_pdb_data(folder_path, output_csv="../../data/02_intermediate/pdb_ind
         lig_code = ""
         lig_smiles = ""
         lig_resi = ""
-        x = abs(np.random.normal(loc=mu, scale=sigma))
-        x = max(x, min_affinity_value)
-        label = -np.log(x)
 
         pdb_entries.append({
             "pdb_id": pdb_id,
@@ -31,12 +28,11 @@ def collect_pdb_data(folder_path, output_csv="../../data/02_intermediate/pdb_ind
             "chain2": chain2,
             "lig_code": lig_code,
             "lig_smiles": lig_smiles,
-            "lig_resi": lig_resi,
-            "label": label
+            "lig_resi": lig_resi
         })
 
     with open(output_csv, "w", newline="") as csvfile:
-        fieldnames = ["pdb_id", "pdb_path", "chain1", "chain2", "lig_code", "lig_smiles", "lig_resi", "label"]
+        fieldnames = ["pdb_id", "pdb_path", "chain1", "chain2", "lig_code", "lig_smiles", "lig_resi"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(pdb_entries)
