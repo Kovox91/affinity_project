@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# pymol
+affinity_predictor/src/dna_positioning/pymol/
