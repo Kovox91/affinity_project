@@ -160,3 +160,6 @@ venv.bak/
 
 # mlflow local runs
 mlruns/*
+
+# misc
+affinity/src/submodules/dna_positioning/pymol
