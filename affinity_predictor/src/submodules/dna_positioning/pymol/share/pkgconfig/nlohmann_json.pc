@@ -1,4 +1,0 @@
-Name: nlohmann_json
-Description: JSON for Modern C++
-Version: 3.11.3
-Cflags: -I/home/appveyor/projects/pymol-incentive/ci-bundle-311/_pymolconda/include

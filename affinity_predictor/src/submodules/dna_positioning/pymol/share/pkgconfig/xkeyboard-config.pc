@@ -1,7 +1,0 @@
-
-datadir=/home/appveyor/projects/pymol-incentive/ci-bundle-311/_pymolconda/share
-xkb_base=/home/appveyor/projects/pymol-incentive/ci-bundle-311/_pymolconda/share/X11/xkb
-
-Name: XKeyboardConfig
-Description: X Keyboard configuration data
-Version: 2.43
