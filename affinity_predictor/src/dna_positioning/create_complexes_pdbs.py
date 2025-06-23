@@ -43,18 +43,16 @@ def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_muta
         new_chain.id = new_chain_id
         model_c.add(new_chain)
 
-# Load structures
-parser = PDBParser(QUIET=True)
-complex_structure = parser.get_structure("complex", "2ff0.pdb")
-complex_structure = complex_structure[0]
 
 # DNA .pdb directory
 directory = os.fsencode("../../data/02_intermediate/dna_pdbs")
-for file in tqdm(os.listdir(directory), "Creating complexes", unit="file"):
+parser = PDBParser(QUIET=True)
+complex_structure = parser.get_structure("complex", "2ff0.pdb")
+complex_structure = complex_structure[0]
+for file in tqdm(os.listdir(directory), desc="Creating Complex PDBs"):
     filename = os.fsdecode(file)
-    
-    # load mutant structure
-    mutant_structure = parser.get_structure("mutant", "../../data/02_intermediate/dna_pdbs/" + filename)
+    # Load structures
+    mutant_structure = parser.get_structure("mutant", "../../data/02_intermediate/dna_pdbs" + filename)
     mutant_structure = mutant_structure[0]
 
     # Get residues with full backbone
@@ -80,4 +78,4 @@ for file in tqdm(os.listdir(directory), "Creating complexes", unit="file"):
     # Save output
     io = PDBIO()
     io.set_structure(complex_structure)
-    io.save("../../data/02_intermediate/complexes_pdbs/" + filename)
+    io.save("../../data/02_intermediate/complexes_pdbs" + filename)
