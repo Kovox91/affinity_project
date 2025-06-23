@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 
 # === CONFIGURATION ===
 input_pkl = "../../data/02_intermediate/processed_pdbs.pkl"
-output_train_pkl = "../../05_model_input/train_labelled_processed_pdbs.pkl"
-output_valid_pkl = "../../05_model_input/valid_labelled_processed_pdbs.pkl"
+output_train_pkl = '../../data/05_model_input/train_set.pkl'
+output_valid_pkl = '../../data/05_model_input/valid_set.pkl'
 
 mu = 0.0
 sigma = 125.0  # 95% of values will fall between -250 and +250
@@ -23,7 +23,7 @@ for item in data:
     affinity_for_log = max(abs(raw_affinity), min_affinity_value)
     neglog_aff = -np.log(affinity_for_log)
 
-    item['label'] = float(neglog_aff) # probably unnecessary!
+    # item['label'] = float(neglog_aff) # probably unnecessary!
     item['affinity'] = {'neglog_aff': float(neglog_aff)}
 
 # === TRAIN-TEST SPLIT ===
