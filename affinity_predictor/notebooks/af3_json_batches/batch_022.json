@@ -1,0 +1,1052 @@
+[
+  {
+    "name": "CGACGCTGCATGCAGGAAGAT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGACGCTGCATGCAGGAAGAT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "ATCTTCCTGCATGCAGCGTCG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TCCAGTCGCAGTTGAAGTCCT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TCCAGTCGCAGTTGAAGTCCT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGGACTTCAACTGCGACTGGA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CTACCTGGTTAGTTCGAGCGT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CTACCTGGTTAGTTCGAGCGT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "ACGCTCGAACTAACCAGGTAG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CCTGGGAAGTAACCGGTTGCT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CCTGGGAAGTAACCGGTTGCT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGCAACCGGTTACTTCCCAGG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "ACACCCCGCTAGTACGATCGG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "ACACCCCGCTAGTACGATCGG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CCGATCGTACTAGCGGGGTGT",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TGAGCCTGCCCGCGCGCGCCT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TGAGCCTGCCCGCGCGCGCCT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGGCGCGCGCGGGCAGGCTCA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CGTCTATAGTGATAAGGTTTC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGTCTATAGTGATAAGGTTTC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GAAACCTTATCACTATAGACG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GCGCTCCAGTGCTACTGCTGA",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GCGCTCCAGTGCTACTGCTGA",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TCAGCAGTAGCACTGGAGCGC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CCGCGCCGCTTTGGGTATGAC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CCGCGCCGCTTTGGGTATGAC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTCATACCCAAAGCGGCGCGG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GTTTAATCTGAAGAAGGTCGG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTTTAATCTGAAGAAGGTCGG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CCGACCTTCTTCAGATTAAAC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TCAACGCGAAGATCAAGTCCG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TCAACGCGAAGATCAAGTCCG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGGACTTGATCTTCGCGTTGA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GTTCAGTTCCACTACAATTCG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTTCAGTTCCACTACAATTCG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGAATTGTAGTGGAACTGAAC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "ACCGGAGGTAGTTGGTTTATT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "ACCGGAGGTAGTTGGTTTATT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AATAAACCAACTACCTCCGGT",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GGCGCCTCTTGTATTAAATCG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GGCGCCTCTTGTATTAAATCG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGATTTAATACAAGAGGCGCC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TAGTAGTTCTGCACCCAACAG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TAGTAGTTCTGCACCCAACAG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CTGTTGGGTGCAGAACTACTA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CCGCATCTGATGGGTGATGTT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CCGCATCTGATGGGTGATGTT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AACATCACCCATCAGATGCGG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TAGTAATCTGCAGGGAGGCCA",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TAGTAATCTGCAGGGAGGCCA",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TGGCCTCCCTGCAGATTACTA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "AAAATTAAGCCCAGACATAGG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AAAATTAAGCCCAGACATAGG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CCTATGTCTGGGCTTAATTTT",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TGTGAGGACGAGAAGTGAGAC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TGTGAGGACGAGAAGTGAGAC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTCTCACTTCTCGTCCTCACA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "ACGGTTTTGGCCTCAAAACTG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "ACGGTTTTGGCCTCAAAACTG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CAGTTTTGAGGCCAAAACCGT",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CGATCCGATCTGCCTTATGTA",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGATCCGATCTGCCTTATGTA",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TACATAAGGCAGATCGGATCG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TTAACGAGAAACAGGTATGGC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TTAACGAGAAACAGGTATGGC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GCCATACCTGTTTCTCGTTAA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "AGGATCCTCAACACCCGTCCT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGGATCCTCAACACCCGTCCT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGGACGGGTGTTGAGGATCCT",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GAGCTACGAACGATTTAGACC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GAGCTACGAACGATTTAGACC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GGTCTAAATCGTTCGTAGCTC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "AAATTCTAGGGACAGGGCTTC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AAATTCTAGGGACAGGGCTTC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GAAGCCCTGTCCCTAGAATTT",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "TGTGATGGGTTGCTAACCGCT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "TGTGATGGGTTGCTAACCGCT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGCGGTTAGCAACCCATCACA",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GTCTTAGTGGGACTTCAATCT",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTCTTAGTGGGACTTCAATCT",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "AGATTGAAGTCCCACTAAGAC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "CTAGCCCCTGACCGCCGGGGC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CTAGCCCCTGACCGCCGGGGC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GCCCCGGCGGTCAGGGGCTAG",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GTGTTAAATCGCGGCCCCTCG",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTGTTAAATCGCGGCCCCTCG",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "CGAGGGGCCGCGATTTAACAC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  },
+  {
+    "name": "GAGGTGACGGCGTGGTCCGAC",
+    "modelSeeds": [
+      42
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "DELCPVCGDKVSGYHYGLLTCESCKGFFKRTVQNNKHYTCTESQSCKIDKTQRKRCPFCRFQKCLTVGMRLEAVRADRMRGGRNKFGPMYKRDRALKQQKKA",
+          "count": 1,
+          "maxTemplateDate": "2025-02-03"
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GAGGTGACGGCGTGGTCCGAC",
+          "count": 1
+        }
+      },
+      {
+        "dnaSequence": {
+          "sequence": "GTCGGACCACGCCGTCACCTC",
+          "count": 1
+        }
+      },
+      {
+        "ion": {
+          "ion": "ZN",
+          "count": 2
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  }
+]
