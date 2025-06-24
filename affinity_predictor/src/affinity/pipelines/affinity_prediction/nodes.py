@@ -2,140 +2,142 @@
 This is a boilerplate pipeline 'affinity_prediction'
 generated using Kedro 0.19.12
 """
-
 # straight foreward: call the pesto module then submmits pestos output to atomica module and run atomica
 
-import subprocess
-import csv
-from pathlib import Path
 from tqdm import tqdm
-import pickle
+from pymol import cmd
+from Bio.PDB import PDBParser, PDBIO, Superimposer
+from io import StringIO
+import pandas as pd
+from submodules.ATOMICA.data.process_pdbs import process_all_pdbs
 import numpy as np
 from sklearn.model_selection import train_test_split
 
+def generate_dna_pdb(seq: str) -> str:
+    cmd.fnab(seq, "dna")
+    result = cmd.get_pdbstr("dna")
+    cmd.delete("dna")
+    return result
 
-def run_python_script_in_env(script: str, env_name: str):
-    command = f"""
-    source ~/miniconda3/etc/profile.d/conda.sh
-    conda activate {env_name}
-    python {script}
-    """
-    subprocess.run(command, shell=True, executable="/bin/bash", check=True)
+def create_DNA_pdbs(sequences: list[str]) -> dict[str, str]:
+    output = {}
+    for seq in tqdm(sequences, desc="Generating PDBs"):
+        pdb_str = generate_dna_pdb(seq)
+        output[seq] = pdb_str
+    return output
 
+BACKBONE_ATOMS = ["P", "O5'", "C5'", "C4'", "C3'", "O3'"]
+RESIDUES_COMPLEX = list(range(2, 16))
+RESIDUES_MUTANT = list(range(5, 19))
 
-def run_bash_script_in_env(script_path: str, env_name: str):
-    """
-    Run a bash script inside a specified conda environment.
+def get_residues_with_full_backbone(structure, chain_id, allowed_residues):
+    full_res = []
+    for residue in structure[chain_id]:
+        if residue.id[1] not in allowed_residues:
+            continue
+        if all(atom in residue for atom in BACKBONE_ATOMS):
+            full_res.append(residue.id[1])
+    return full_res
 
-    Args:
-        script_path (str): Path to the bash script to execute.
-        env_name (str): Conda environment to activate.
-    """
-    command = f"""
-    source ~/miniconda3/etc/profile.d/conda.sh
-    conda activate {env_name}
-    bash {script_path}
-    """
-    subprocess.run(command, shell=True, executable="/bin/bash", check=True)
+def get_backbone_atoms_filtered(structure, chain_id, residue_ids):
+    atoms = []
+    for residue in structure[chain_id]:
+        if residue.id[1] not in residue_ids:
+            continue
+        if all(atom in residue for atom in BACKBONE_ATOMS):
+            for atom_name in BACKBONE_ATOMS:
+                atoms.append(residue[atom_name])
+    return atoms
 
+def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_mutant, new_chain_id):
+    model_c = complex_struct
+    model_m = mutant_struct
+    
+    if chain_id_complex in model_c:
+        model_c.detach_child(chain_id_complex)
+    if chain_id_mutant in model_m:
+        new_chain = model_m[chain_id_mutant].copy()
+        new_chain.id = new_chain_id
+        model_c.add(new_chain)
 
-def create_DNA_pdbs():
-    run_python_script_in_env(
-        script="../../src/dna_positioning/create_dna.py", env_name="dna_positioning"
-    )
+def create_complex_pdbs(mutant_structures: dict[str, str], complex_template: str) -> dict[str, str]:
+    parser = PDBParser(QUIET=True)
+    complex_structure = parser.get_structure("complex", StringIO(complex_template))[0]
 
+    result = {}
 
-def create_complex_pdbs():
-    run_python_script_in_env(
-        script="../../src/dna_positioning/create_complexes_pdbs.py",
-        env_name="dna_positioning",
-    )
+    for filename, mutant_pdb in tqdm(mutant_structures.items(), desc="Creating Complex PDBs"):
+        mutant_structure = parser.get_structure("mutant", StringIO(mutant_pdb))[0]
 
+        complex_res_B = set(get_residues_with_full_backbone(complex_structure, "B", RESIDUES_COMPLEX))
+        mutant_res_A  = set(get_residues_with_full_backbone(mutant_structure, "A", RESIDUES_MUTANT))
 
-def create_data_index(folder_path: str, output_csv: str):
+        complex_atoms_B = get_backbone_atoms_filtered(complex_structure, "B", RESIDUES_COMPLEX)
+        mutant_atoms_A  = get_backbone_atoms_filtered(mutant_structure, "A", RESIDUES_MUTANT)
+
+        if len(complex_atoms_B) != len(mutant_atoms_A):
+            raise ValueError(f"Backbone atom counts differ in {filename}: {len(complex_atoms_B)} vs {len(mutant_atoms_A)}")
+
+        sup = Superimposer()
+        sup.set_atoms(complex_atoms_B, mutant_atoms_A)
+        sup.apply(mutant_structure.get_atoms())
+
+        replace_chain(complex_structure, mutant_structure, "B", "A", "B")
+        replace_chain(complex_structure, mutant_structure, "C", "B", "C")
+
+        io = PDBIO()
+        output_io = StringIO()
+        io.set_structure(complex_structure)
+        io.save(output_io)
+
+        result[filename] = output_io.getvalue()
+
+    return result
+
+def create_data_index(pdb_files: dict[str, str]) -> pd.DataFrame:
     pdb_entries = []
-    folder_path = Path(folder_path)
 
-    print(f"Collecting PDB data from {folder_path}...")
-    for pdb_file in folder_path.rglob("*.pdb"):
-        pdb_id = pdb_file.stem.lower()
-        pdb_path = "../" + str(pdb_file)
-        # Relevant Fields
-        chain1 = "A"
-        chain2 = "B_C"
-        lig_code = ""
-        lig_smiles = ""
-        lig_resi = ""
+    for filename in tqdm(pdb_files.keys(), desc="Indexing PDBs"):
+        pdb_id = filename.replace(".pdb", "").lower()
+        pdb_path = f"../data/02_intermediate/complexes_pdbs/{filename}"
 
-        pdb_entries.append(
-            {
-                "pdb_id": pdb_id,
-                "pdb_path": pdb_path,
-                "chain1": chain1,
-                "chain2": chain2,
-                "lig_code": lig_code,
-                "lig_smiles": lig_smiles,
-                "lig_resi": lig_resi,
-            }
-        )
+        pdb_entries.append({
+            "pdb_id": pdb_id,
+            "pdb_path": pdb_path,
+            "chain1": "A",
+            "chain2": "B_C",
+            "lig_code": "",
+            "lig_smiles": "",
+            "lig_resi": ""
+        })
 
-    with open(output_csv, "w", newline="") as csvfile:
-        fieldnames = [
-            "pdb_id",
-            "pdb_path",
-            "chain1",
-            "chain2",
-            "lig_code",
-            "lig_smiles",
-            "lig_resi",
-        ]
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(pdb_entries)
+    return pd.DataFrame(pdb_entries)
 
-
-def process_pdbs():
-    run_python_script_in_env(
-        script="../../src/submodules/ATOMICA/data/process_pdbs.py --data_index_file ../../../data/02_intermediate/pdb_index.csv --out_path ../../../data/02_intermediate/processed_pdbs.pkl",
-        env_name="atomicaenv",
+def process_pdbs(pdb_index: pd.DataFrame, params: dict) -> list[dict]:
+    return process_all_pdbs(
+        index_df=pdb_index,
+        dist_th=params.get("interface_dist_th", 8.0),
+        fragmentation_method=params.get("fragmentation_method", None)
     )
 
+def add_affinities(
+    items: list[dict],
+    params: dict
+) -> tuple[list[dict], list[dict]]:
+    mu = params.get("mu", 0.0)
+    sigma = params.get("sigma", 125.0)
+    min_affinity_value = params.get("min_affinity_value", 1e-5)
+    test_size = params.get("test_size", 0.2)
+    seed = params.get("random_state", 42)
 
-def add_affinities_and_split(
-    input_pkl: str, output_train_pkl: str, output_valid_pkl: str, test_size: float = 0.2
-):
-    # === CONFIGURATION ===
-    mu = 0.0
-    sigma = 125.0  # 95% of values will fall between -250 and +250
-    min_affinity_value = 1e-5  # to avoid log(0) in neglog_aff computation
-
-    # === LOAD ===
-    with open(input_pkl, "rb") as f:
-        data = pickle.load(f)
-
-    print(f"Loaded {len(data)} items from {input_pkl}")
-
-    # === GENERATE FAKE AFFINITIES ===
-    for item in data:
+    for item in items:
         raw_affinity = np.random.normal(loc=mu, scale=sigma)
         affinity_for_log = max(abs(raw_affinity), min_affinity_value)
         neglog_aff = -np.log(affinity_for_log)
-
-        # item['label'] = float(neglog_aff) # probably unnecessary!
         item["affinity"] = {"neglog_aff": float(neglog_aff)}
 
-    # === TRAIN-TEST SPLIT ===
-    train_data, test_data = train_test_split(data, test_size=test_size, random_state=42)
-
-    # === SAVE SPLITS ===
-    with open(output_train_pkl, "wb") as f:
-        pickle.dump(train_data, f)
-    with open(output_valid_pkl, "wb") as f:
-        pickle.dump(test_data, f)
-
+    train_data, test_data = train_test_split(items, test_size=test_size, random_state=seed)
+    return train_data, test_data
 
 def run_atomica():
-    run_bash_script_in_env(
-        script="../../src/submodules/ATOMICA/scripts/train_atomica_affinity.sh",
-        env_name="atomica",
-    )
+    pass
