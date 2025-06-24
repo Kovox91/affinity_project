@@ -52,7 +52,7 @@ complex_structure = complex_structure[0]
 for file in tqdm(os.listdir(directory), desc="Creating Complex PDBs"):
     filename = os.fsdecode(file)
     # Load structures
-    mutant_structure = parser.get_structure("mutant", "../../data/02_intermediate/dna_pdbs" + filename)
+    mutant_structure = parser.get_structure("mutant", "../../data/02_intermediate/dna_pdbs/" + filename)
     mutant_structure = mutant_structure[0]
 
     # Get residues with full backbone
@@ -78,4 +78,4 @@ for file in tqdm(os.listdir(directory), desc="Creating Complex PDBs"):
     # Save output
     io = PDBIO()
     io.set_structure(complex_structure)
-    io.save("../../data/02_intermediate/complexes_pdbs" + filename)
+    io.save("../../data/02_intermediate/complexes_pdbs/" + filename)
