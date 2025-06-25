@@ -1,0 +1,395 @@
+2025-06-25 10:22:25,589 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:22:25,764 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:24:05,403 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:25:08,909 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:31:15,115 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:31:15,359 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:31:15,361 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:31:37,328 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:31:37,550 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:31:37,553 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:31:55,762 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:31:55,987 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:31:55,989 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:33:06,833 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:33:07,053 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:33:07,091 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:33:07,104 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/project/__init__.py:452: UserWarning: An error occurred while importing the 'affinity_predictor.pipelines.affinity_prediction' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/project/__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_prediction/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_prediction/pipeline.py", line 37
+    node(
+    ^
+SyntaxError: invalid syntax
+
+  warnings.warn(
+
+2025-06-25 10:33:07,108 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:34:57,286 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:34:57,508 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:34:57,541 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:34:57,549 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/project/__init__.py:452: UserWarning: An error occurred while importing the 'affinity_predictor.pipelines.affinity_predictor' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/project/__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/pipeline.py", line 37
+    node(
+    ^
+SyntaxError: invalid syntax
+
+  warnings.warn(
+
+2025-06-25 10:34:57,554 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:37:07,519 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:37:07,738 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:37:07,771 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:37:11,797 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:38:00,797 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:38:01,018 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:38:01,051 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:38:02,962 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:38:34,075 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:38:34,296 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:38:34,335 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:38:36,265 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:39:32,390 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:39:32,610 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:39:32,644 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:39:34,553 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/io/core.py:575: UserWarning: Since kedro-datasets 2.0, 'Dataset' is spelled with a lowercase 's'. Got 'partitioned.ParquetDataSet'.
+  warnings.warn(
+
+2025-06-25 10:39:34,555 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:41:13,953 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:41:14,174 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:41:14,206 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:41:16,109 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:41:37,033 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:41:37,254 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:41:37,287 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:41:39,197 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:41:48,437 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:41:48,660 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:41:48,693 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:41:50,598 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:42:44,354 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:42:44,573 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:42:44,606 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:42:46,509 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:44:58,032 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:44:58,253 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:44:58,288 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:45:00,200 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/io/core.py:575: UserWarning: Since kedro-datasets 2.0, 'Dataset' is spelled with a lowercase 's'. Got 'pandas.CSVDataSet'.
+  warnings.warn(
+
+2025-06-25 10:45:00,202 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:45:39,664 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:45:39,882 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:45:39,916 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:45:41,821 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:48:40,127 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:48:40,346 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:48:40,379 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:48:42,221 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:50:12,910 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:50:13,131 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:50:13,165 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:50:15,000 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:50:42,318 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:50:42,541 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:50:42,574 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:50:44,521 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:50:44,997 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 10:50:44,998 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-06-25 10:50:44,999 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-06-25 10:50:45,220 - kedro.pipeline.node - ERROR - Node create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs] failed with error: 
+ Error: "
+" not of DNA type...
+2025-06-25 10:50:45,221 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-06-25 10:57:47,055 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 10:57:47,698 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 10:57:47,769 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 10:58:11,636 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 10:58:12,130 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 10:58:12,134 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-06-25 10:58:12,138 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-06-25 11:00:16,544 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:00:17,177 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:00:17,245 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:00:23,110 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:00:23,606 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:00:23,611 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-06-25 11:00:23,615 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-06-25 11:00:59,390 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:00:59,612 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:00:59,646 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:01:01,586 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:01:02,069 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:01:02,070 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-06-25 11:01:02,071 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-06-25 11:10:03,135 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-06-25 11:10:03,206 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-06-25 11:10:03,208 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-06-25 11:10:03,209 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-06-25 11:10:03,234 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-06-25 11:10:03,236 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-06-25 11:10:56,700 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-06-25 11:10:56,877 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-06-25 11:10:56,878 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-06-25 11:10:56,879 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:10:56,954 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs]) -> [complex_index_df]
+2025-06-25 11:10:56,958 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-06-25 11:10:56,970 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-06-25 11:10:56,971 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-06-25 11:10:56,972 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:10:57,048 - kedro.io.data_catalog - INFO - Loading data from complex_pdb_output_folder (PartitionedDataset)...
+2025-06-25 11:10:57,134 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;complex_pdb_output_folder]) -> None
+2025-06-25 11:10:57,135 - kedro.pipeline.node - ERROR - Node save_complex_pdb_files_node: save_pdb_files([complex_pdbs;complex_pdb_output_folder]) -> None failed with error: 
+expected str, bytes or os.PathLike object, not dict
+2025-06-25 11:10:57,137 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "process_pdbs_node,save_complex_pdb_files_node"
+2025-06-25 11:14:37,729 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:14:37,948 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:14:37,982 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:14:39,906 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:14:40,387 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:14:40,388 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:14:40,394 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:14:40,399 - kedro.pipeline.node - ERROR - Node process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs] failed with error: 
+Unsupported PDB file type, ../data/02_intermediate/complexes_pdbs/AAAAAAAAAAAAAAAAAAAAA
+2025-06-25 11:14:40,401 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-06-25 11:18:25,456 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:18:25,676 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:18:25,710 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:18:27,640 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:18:28,120 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:18:28,121 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:18:28,126 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:18:28,129 - kedro.pipeline.node - ERROR - Node process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs] failed with error: 
+Unsupported PDB file type, ../data/02_intermediate/complexes_pdbs/AAAAAAAAAAAAAAAAAAAAA
+2025-06-25 11:18:28,130 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-06-25 11:19:08,460 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:19:08,679 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:19:08,718 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:19:10,617 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:19:11,094 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:19:11,095 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-06-25 11:19:11,097 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-06-25 11:29:16,045 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-06-25 11:29:16,579 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-06-25 11:29:16,581 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-06-25 11:29:16,582 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-06-25 11:29:16,607 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-06-25 11:29:16,609 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-06-25 11:30:09,600 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-06-25 11:30:10,840 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-06-25 11:30:10,841 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-06-25 11:30:10,843 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:30:10,962 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs]) -> [complex_index_df]
+2025-06-25 11:30:10,966 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-06-25 11:30:10,987 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-06-25 11:30:10,988 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-06-25 11:30:10,989 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:30:11,109 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-06-25 11:30:11,110 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-06-25 11:30:11,325 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-06-25 11:30:11,326 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-06-25 11:30:11,327 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:30:11,331 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:30:11,332 - kedro.pipeline.node - ERROR - Node process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs] failed with error: 
+Unsupported PDB file type, ../data/02_intermediate/complexes_pdbs/AAAAAAAAAAAAAAAAAAAAA
+2025-06-25 11:30:11,334 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "process_pdbs_node"
+2025-06-25 11:37:51,635 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:37:52,297 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:38:42,106 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:38:42,742 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:38:43,335 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:38:53,735 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:38:54,228 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:38:54,232 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:38:54,262 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:41:39,106 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:41:39,749 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:41:40,350 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:42:00,238 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:42:15,326 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:42:15,964 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:42:16,560 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:42:25,301 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:42:25,790 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:42:25,794 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:42:26,879 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs]) -> [complex_index_df]
+2025-06-25 11:43:16,897 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:43:17,528 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:43:18,122 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:43:24,470 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:43:24,964 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:43:24,969 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:43:25,107 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs]) -> [complex_index_df]
+2025-06-25 11:43:45,553 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-06-25 11:43:45,580 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-06-25 11:43:45,583 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-06-25 11:43:45,587 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:43:45,595 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:44:04,308 - kedro.pipeline.node - ERROR - Node process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs] failed with error: 
+[Errno 2] No such file or directory: '../data/02_intermediate/complexes_pdbs/AAAAAAAAAAAAAAAAAAAAA.pdb'
+2025-06-25 11:44:04,317 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "process_pdbs_node"
+2025-06-25 11:47:18,962 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:47:19,598 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:47:20,193 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:47:23,792 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:47:24,281 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:47:24,285 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:47:24,425 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-06-25 11:47:24,429 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-06-25 11:47:24,442 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-06-25 11:47:24,471 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-06-25 11:47:24,474 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-06-25 11:47:24,477 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:47:24,485 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:59:03,281 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 11:59:03,499 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 11:59:03,561 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 11:59:05,528 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 11:59:06,010 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 11:59:06,012 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 11:59:06,154 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-06-25 11:59:06,156 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-06-25 11:59:06,160 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-06-25 11:59:06,181 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-06-25 11:59:06,182 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-06-25 11:59:06,183 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 11:59:06,187 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 11:59:07,117 - kedro.pipeline.node - ERROR - Node process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs] failed with error: 
+[Errno 2] No such file or directory: 'data/02_intermediate/complexes_pdbs/TGTACGTGACTGAGAGACAAC.pdb'
+2025-06-25 11:59:07,119 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "process_pdbs_node"
+2025-06-25 12:07:09,030 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-06-25 12:07:09,252 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-06-25 12:07:09,504 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-06-25 12:07:11,409 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-06-25 12:07:11,891 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-06-25 12:07:11,893 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-06-25 12:07:11,894 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-06-25 12:17:16,310 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-06-25 12:17:17,068 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-06-25 12:17:17,069 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-06-25 12:17:17,070 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-06-25 12:17:17,095 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-06-25 12:17:17,098 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-06-25 12:26:51,010 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-06-25 12:26:52,220 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-06-25 12:26:52,222 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-06-25 12:26:52,223 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 12:26:52,341 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-06-25 12:26:52,342 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-06-25 12:26:52,345 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-06-25 12:26:52,366 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-06-25 12:26:52,367 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-06-25 12:26:52,369 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-06-25 12:26:52,483 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-06-25 12:26:52,485 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-06-25 12:26:53,024 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-06-25 12:26:53,025 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-06-25 12:26:53,026 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-06-25 12:26:53,029 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-06-25 12:27:35,370 - kedro.io.data_catalog - INFO - Saving data to processed_pdbs (PickleDataset)...
+2025-06-25 12:27:35,951 - kedro.runner.sequential_runner - INFO - Completed node: process_pdbs_node
+2025-06-25 12:27:35,953 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-06-25 12:27:35,954 - kedro.io.data_catalog - INFO - Loading data from processed_pdbs (PickleDataset)...
+2025-06-25 12:27:37,126 - kedro.pipeline.node - INFO - Running node: add_affinities_node: add_affinities([processed_pdbs]) -> [train_items;test_items]
+2025-06-25 12:27:37,131 - kedro.io.data_catalog - INFO - Saving data to train_items (PickleDataset)...
+2025-06-25 12:27:37,414 - kedro.io.data_catalog - INFO - Saving data to test_items (PickleDataset)...
+2025-06-25 12:27:37,570 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
+2025-06-25 12:27:37,571 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-06-25 12:27:37,573 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 1225.7 sec.
