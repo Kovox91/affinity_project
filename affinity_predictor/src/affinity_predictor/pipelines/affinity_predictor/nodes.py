@@ -13,8 +13,7 @@ import pandas as pd
 from submodules.ATOMICA.data.process_pdbs import process_all_pdbs
 import numpy as np
 from sklearn.model_selection import train_test_split
-import os
-
+import warnings
 
 def generate_dna_pdb(seq: str) -> str:
     cmd.fnab(seq, "dna")
@@ -27,6 +26,9 @@ def create_DNA_pdbs(sequence_file_content: str) -> dict[str, str]:
     output = {}
     lines = sequence_file_content.strip().split("\n")
     for line in tqdm(lines, desc="Generating DNA PDBs"):
+        if len(line.split()) != 5:
+            warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+            continue
         sequence = line.split()[0]  # Only take the first element
         pdb_str = generate_dna_pdb(sequence)
         output[sequence] = pdb_str
@@ -156,33 +158,42 @@ def process_pdbs(pdb_index: pd.DataFrame) -> list[dict]:
     )
 
 
-def add_affinities(items: list[dict], affinities:str) -> tuple[list[dict], list[dict]]:
+def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list[dict]]:
     seed = 42
     test_size = 0.2
 
     lines = affinities.strip().split("\n")
-    if len(lines) != len(items):
-        raise ValueError("Number of items and affinity lines do not match")
-
-    for item, line in zip(items, lines):
+    valid_lines = []
+    for line in lines:
         parts = line.strip().split()
-        if len(parts) < 4:
-            raise ValueError(f"Invalid line: {line}")
+        if len(parts) == 5:
+            valid_lines.append(parts)
+        else:
+            warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
 
-        col2 = float(parts[1])
-        col3 = float(parts[2])
-        affinity = col3 - col2
+    if len(valid_lines) != len(items):
+        raise ValueError(
+            f"Number of valid affinity lines ({len(valid_lines)}) does not match number of items ({len(items)})"
+        )
 
-        if affinity <= 0:
-            raise ValueError(f"Non-positive affinity value ({affinity}) in line: {line}")
+    for item, parts in zip(items, valid_lines):
+        try:
+            col2 = float(parts[1])
+            col3 = float(parts[3])
+            affinity = col3 - col2
+            if affinity <= 0:
+                raise ValueError(f"Non-positive affinity value ({affinity}) in line: {' '.join(parts)}")
+            neglog_aff = -np.log(affinity)
+            item["affinity"] = {
+                "value": affinity,
+                "neglog_aff": float(neglog_aff),
+            }
+        except Exception as e:
+            raise ValueError(f"Error processing line: {' '.join(parts)}\n{e}")
 
-        neglog_aff = -np.log(affinity)
-        item["affinity"] = {
-            "value": affinity,
-            "neglog_aff": float(neglog_aff),
-        }
+    train_data, temp_data = train_test_split(items, test_size=0.3, random_state=seed)
 
-    train_data, test_data = train_test_split(
-        items, test_size=test_size, random_state=seed
-    )
-    return train_data, test_data
+    # Second split: validation + test from temp_data
+    val_data, test_data = train_test_split(temp_data, test_size=0.5, random_state=seed)
+
+    return train_data, test_data, val_data
