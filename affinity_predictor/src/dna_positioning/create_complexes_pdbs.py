@@ -47,13 +47,15 @@ def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_muta
 # DNA .pdb directory
 directory = os.fsencode("../../data/02_intermediate/dna_pdbs")
 parser = PDBParser(QUIET=True)
-complex_structure = parser.get_structure("complex", "2ff0.pdb")
-complex_structure = complex_structure[0]
+
 for file in tqdm(os.listdir(directory), desc="Creating Complex PDBs"):
     filename = os.fsdecode(file)
     # Load structures
     mutant_structure = parser.get_structure("mutant", "../../data/02_intermediate/dna_pdbs/" + filename)
     mutant_structure = mutant_structure[0]
+
+    complex_structure = parser.get_structure("complex", "/home/sascha/data/Projects/affinity_project/affinity_predictor/data/01_raw/2ff0.pdb")
+    complex_structure = complex_structure[0]
 
     # Get residues with full backbone
     complex_res_B = set(get_residues_with_full_backbone(complex_structure, "B", RESIDUES_COMPLEX))

@@ -2,3 +2,43 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+input_sequences:
+  type: text.TextDataset
+  filepath: data/01_raw/seqs.dat
+  versioned: false
+
+dna_pdbs:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/dna_pdbs.pkl
+
+complex_template_pdb:
+  type: text.TextDataset
+  filepath: data/01_raw/2ff0.pdb
+  versioned: false
+
+complex_pdbs:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/complex_pdbs.pkl
+
+complex_pdb_output_folder:
+  type: partitions.PartitionedDataset
+  path: data/02_intermediate/complexes_pdbs
+  dataset: text.TextDataset
+  filename_suffix: .pdb
+
+complex_index_df:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/complex_index_df.csv
+
+processed_pdbs:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/processed_pdbs.pkl
+
+train_items:
+  type: pickle.PickleDataset
+  filepath: data/05_model_input/train_items.pkl
+
+test_items:
+  type: pickle.PickleDataset
+  filepath: data/05_model_input/test_items.pkl

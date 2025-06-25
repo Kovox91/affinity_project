@@ -7,10 +7,6 @@ def collect_pdb_data(folder_path, output_csv="../../data/02_intermediate/pdb_ind
     pdb_entries = []
     folder_path = Path(folder_path)
 
-    mu = 0.0
-    sigma = 125.0  # 95% of values will fall between -250 and +250
-    min_affinity_value = 1e-5  # to avoid log(0) in neglog_aff computation
-
     for pdb_file in tqdm(folder_path.rglob("*.pdb"), desc="Collecting PDB data"):
         pdb_id = pdb_file.stem.lower()
         pdb_path = "../" + str(pdb_file)
