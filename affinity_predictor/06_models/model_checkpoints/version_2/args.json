@@ -13,7 +13,7 @@
     "warmup_start_lr": 1e-05,
     "warmup_end_lr": 0.001,
     "dropout": 0.0,
-    "max_epoch": 3,
+    "max_epoch": 10,
     "grad_clip": null,
     "save_dir": "../../../06_models/model_checkpoints",
     "batch_size": 1,

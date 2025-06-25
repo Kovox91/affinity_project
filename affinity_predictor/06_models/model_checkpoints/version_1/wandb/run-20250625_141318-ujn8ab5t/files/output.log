@@ -1,4 +1,0 @@
-2025-06-25 14:13:19::INFO::training on [-1]
-2025-06-25 14:13:19::INFO::epoch0 starts
-2025-06-25 14:13:19::INFO::Number of items too large: 0 out of 426. Remaining: 426 batches. Created 142 batches.
-  1%|▍                                                      | 1/142 [00:47<1:52:38, 47.93s/it, loss=1.51, version=1]
