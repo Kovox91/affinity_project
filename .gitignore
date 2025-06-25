@@ -11,3 +11,6 @@ wheels/
 
 # pymol
 affinity_predictor/src/dna_positioning/pymol/
+
+# intermediate files
+*.pkl
