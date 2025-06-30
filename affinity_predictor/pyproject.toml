@@ -3,7 +3,7 @@ requires = [ "setuptools",]
 build-backend = "setuptools.build_meta"
 
 [project]
-requires-python = ">=3.9"
+requires-python = "==3.9"
 name = "affinity_predictor"
 readme = ""
 dynamic = [ "version",]
