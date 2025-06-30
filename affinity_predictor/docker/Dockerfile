@@ -8,6 +8,10 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
 RUN micromamba install -y -n base python=3.9.23 -c conda-forge git \
  && micromamba clean --all --yes
 
+USER root
+
+RUN apt-get update && apt-get install -y build-essential
+
 # Clone into a writable location
 RUN git clone --branch remote_prep https://github.com/Kovox91/affinity_project.git /home/mambauser/app \
  && cd /home/mambauser/app \
