@@ -4,6 +4,10 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     CONDA_DEFAULT_ENV=base \
     PYTHONNOUSERSITE=1
 
+RUN micromamba install -y -n base -c conda-forge git \
+ && micromamba clean --all --yes
+
+
 # Clone project and its submodules
 RUN git clone --branch remote_prep git clone https://github.com/Kovox91/affinity_project.git /opt/app \
  && cd /opt/app \
