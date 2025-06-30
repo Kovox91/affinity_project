@@ -11,6 +11,7 @@ RUN micromamba install -y -n base python=3.9.23 -c conda-forge git \
 USER root
 
 RUN apt-get update && apt-get install -y build-essential
+USER mambauser
 
 # Clone into a writable location
 RUN git clone --branch remote_prep https://github.com/Kovox91/affinity_project.git /home/mambauser/app \
