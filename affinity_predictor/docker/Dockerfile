@@ -25,9 +25,13 @@ RUN micromamba install -y -n base -c conda-forge pymol-open-source \
 USER mambauser
 WORKDIR /home/mambauser/app/affinity_predictor
 
-RUN pip install --upgrade pip setuptools \
- && pip wheel . -w /tmp/wheels \
+
+RUN pip install --upgrade pip setuptools
+
+RUN pip wheel . -w /tmp/wheels \
  && pip install /tmp/wheels/affinity_predictor-*.whl
+
+RUN pip install kedro
 
 
 ENTRYPOINT ["kedro", "run"]
