@@ -4,17 +4,23 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     CONDA_DEFAULT_ENV=base \
     PYTHONNOUSERSITE=1
 
-WORKDIR /opt/app
-COPY --chown=mambauser:mambauser . /opt/app
+# Clone project and its submodules
+RUN git clone --branch remote_prep https://github.com/YOURUSERNAME/YOURREPO.git /opt/app \
+ && cd /opt/app \
+ && git submodule update --init --recursive
 
+WORKDIR /opt/app
+
+# Update micromamba
 RUN micromamba update -n base -c conda-forge micromamba
 
+# Install PyMOL
 RUN micromamba clean --all --yes \
  && micromamba install -y -n base -c conda-forge pymol-open-source \
  && micromamba clean --all --yes
 
-# <<< FIX HERE: do this as root >>>
-RUN chmod -R u+rwX /opt/app
+# Set permissions before switching user
+RUN chown -R mambauser:mambauser /opt/app
 
 USER mambauser
 
@@ -22,5 +28,4 @@ RUN pip install --upgrade pip setuptools \
  && pip wheel /opt/app -w /tmp/wheels \
  && pip install /tmp/wheels/affinity_predictor-*.whl
 
-WORKDIR /opt/app
 ENTRYPOINT ["kedro", "run"]
