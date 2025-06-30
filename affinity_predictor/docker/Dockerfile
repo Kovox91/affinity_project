@@ -14,7 +14,7 @@ RUN micromamba install -y -n base -c conda-forge pymol-open-source \
 
 # Install your project — build from /opt/app but write nowhere restricted
 RUN pip install --upgrade pip setuptools \
- && pip install --no-build-isolation /opt/app
+ && pip install -e /opt/app
 
 # Set actual workdir for container
 WORKDIR /opt/app
