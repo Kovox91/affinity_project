@@ -5,7 +5,7 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     PYTHONNOUSERSITE=1
 
 # Install git
-RUN micromamba install -y -n base -c conda-forge git \
+RUN micromamba install -y -n base python=3.9 -c conda-forge git \
  && micromamba clean --all --yes
 
 # Clone into a writable location
