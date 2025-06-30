@@ -9,7 +9,7 @@ WORKDIR /build
 COPY . /opt/app
 
 RUN chown -R micromamba:micromamba /opt/app
-USER mambauser
+USER micromamba
 WORKDIR /opt/app
 
 # Install dependencies
