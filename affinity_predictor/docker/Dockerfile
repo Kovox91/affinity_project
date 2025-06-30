@@ -12,6 +12,9 @@ COPY . /opt/app
 RUN micromamba install -y -n base -c conda-forge pymol-open-source \
  && micromamba clean --all --yes
 
+ # Change ownership of /opt/app to the micromamba user
+ RUN chown -R mambauser:mambauser /opt/app
+
 # Install your project — build from /opt/app but write nowhere restricted
 RUN pip install --upgrade pip setuptools \
  && cd /tmp && pip install /opt/app
