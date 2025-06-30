@@ -5,7 +5,7 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     PYTHONNOUSERSITE=1
 
 # Install git
-RUN micromamba install -y -n base python=3.9 -c conda-forge git \
+RUN micromamba install -y -n base python=3.9.23 -c conda-forge git \
  && micromamba clean --all --yes
 
 # Clone into a writable location
@@ -33,7 +33,6 @@ RUN pip wheel . -w /tmp/wheels \
 
 RUN pip install torch==2.1.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118 \
     && pip install torch-scatter torch-cluster --find-links https://pytorch-geometric.com/whl/torch-2.1.1+cu118.html
-
 
 RUN pip install kedro
 
