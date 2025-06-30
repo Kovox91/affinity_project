@@ -5,7 +5,7 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     PYTHONNOUSERSITE=1
 
 # Clone project and its submodules
-RUN git clone --branch remote_prep https://github.com/YOURUSERNAME/YOURREPO.git /opt/app \
+RUN git clone --branch remote_prep git clone https://github.com/Kovox91/affinity_project.git /opt/app \
  && cd /opt/app \
  && git submodule update --init --recursive
 
