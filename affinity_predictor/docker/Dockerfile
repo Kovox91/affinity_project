@@ -12,6 +12,10 @@ WORKDIR /app
 # Copy everything into the image (minimal .dockerignore is ideal)
 COPY . /app
 
+# set up proper permissions
+RUN chown -R $MAMBA_USER /app
+
+
 # Install PyMOL via micromamba (conda-forge channel)
 RUN micromamba install -y -n base -c conda-forge \
     pymol-open-source \
