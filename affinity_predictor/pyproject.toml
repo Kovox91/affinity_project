@@ -7,7 +7,16 @@ requires-python = ">=3.9"
 name = "affinity_predictor"
 readme = "README.md"
 dynamic = [ "version",]
-dependencies = [ "ipython>=8.10", "jupyterlab>=3.0", "notebook", "kedro~=0.19.14",]
+dependencies = [
+    "ipython>=8.10",
+    "jupyterlab>=3.0",
+    "notebook", 
+    "kedro~=0.19.14",
+    "tqdm",
+    "biopython",
+    "pandas",
+    "numpy",
+    "scikit-learn", ]
 
 [project.scripts]
 data-preparation = "affinity_predictor.__main__:main"
