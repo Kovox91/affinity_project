@@ -4,14 +4,17 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     CONDA_DEFAULT_ENV=base \
     PYTHONNOUSERSITE=1
 
+# Install git
 RUN micromamba install -y -n base -c conda-forge git \
  && micromamba clean --all --yes
 
-
-# Clone project and its submodules
-RUN git clone --branch remote_prep https://github.com/Kovox91/affinity_project.git /opt/app \
- && cd /opt/app \
- && git submodule update --init --recursive
+# Clone the repo + submodules in /tmp, then move and chown it into place
+RUN git clone --branch remote_prep https://github.com/Kovox91/affinity_project.git /tmp/app \
+ && cd /tmp/app \
+ && git submodule update --init --recursive \
+ && chown -R mambauser:mambauser /tmp/app \
+ && mv /tmp/app /opt/app \
+ && rm -rf /tmp/app/.git \
 
 WORKDIR /opt/app
 
