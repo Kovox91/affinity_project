@@ -30,6 +30,7 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "plotly",
+]
 
 [project.scripts]
 data-preparation = "affinity_predictor.__main__:main"
