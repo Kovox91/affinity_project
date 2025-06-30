@@ -5,21 +5,20 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     PYTHONNOUSERSITE=1
 
 # Clean separate working dir for pip install
-WORKDIR /build
 COPY . /opt/app
+RUN chown -R mambauser:mambauser /opt/app
 
-RUN chown -R micromamba:micromamba /opt/app
-USER micromamba
+# Switch to non-root user before installing anything
+USER mambauser
 WORKDIR /opt/app
 
-# Install dependencies
+# Install dependencies from conda
 RUN micromamba install -y -n base -c conda-forge pymol-open-source \
  && micromamba clean --all --yes
 
-# Install your project — build from /opt/app but write nowhere restricted
+# Install your project
 RUN pip install --upgrade pip setuptools \
- && pip install --no-build-isolation /opt/app
+ && pip install --no-build-isolation .
 
-# Set actual workdir for container
-WORKDIR /opt/app
+# Set default command for the container
 ENTRYPOINT ["kedro", "run"]
