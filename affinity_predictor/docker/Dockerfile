@@ -31,7 +31,13 @@ RUN pip install --upgrade pip setuptools
 RUN pip wheel . -w /tmp/wheels \
  && pip install /tmp/wheels/affinity_predictor-*.whl
 
+RUN pip install torch==2.1.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118 \
+    && pip install torch-scatter torch-cluster --find-links https://pytorch-geometric.com/whl/torch-2.1.1+cu118.html
+
+
 RUN pip install kedro
 
+ENV PYTHONPATH="/home/mambauser/app/affinity_predictor/src:$PYTHONPATH"
 
-ENTRYPOINT ["kedro", "run"]
+
+ENTRYPOINT ["bash", "-c", "source /opt/conda/etc/profile.d/conda.sh && conda activate base && exec kedro run"]

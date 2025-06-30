@@ -10,13 +10,26 @@ dynamic = [ "version",]
 dependencies = [
     "ipython>=8.10",
     "jupyterlab>=3.0",
-    "notebook", 
+    "notebook",
     "kedro~=0.19.14",
     "tqdm",
-    "biopython",
+    "biopython==1.84",
     "pandas",
-    "numpy",
-    "scikit-learn", ]
+    "numpy==1.26.4",
+    "scikit-learn",
+    "tensorboard==2.18.0",
+    "e3nn==0.5.1",
+    "scipy==1.13.1",
+    "rdkit-pypi==2022.9.5",
+    "openbabel-wheel==3.1.1.20",
+    "biotite==0.40.0",
+    "atom3d",
+    "wandb==0.18.2",
+    "orjson",
+    "umap-learn",
+    "matplotlib",
+    "seaborn",
+    "plotly",
 
 [project.scripts]
 data-preparation = "affinity_predictor.__main__:main"
