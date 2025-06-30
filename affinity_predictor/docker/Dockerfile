@@ -1,29 +1,24 @@
-# docker/Dockerfile
-
 FROM mambaorg/micromamba:1.5.6
 
 ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
     CONDA_DEFAULT_ENV=base \
     PYTHONNOUSERSITE=1
 
-# Create working directory inside the container
-WORKDIR /app
+# Create a clean writable working dir
+WORKDIR /opt/app
 
-# Copy everything into the image (minimal .dockerignore is ideal)
-COPY . /app
+# Copy only project files — do not try to chown them
+COPY . /opt/app
 
-# set up proper permissions
-RUN chown -R $MAMBA_USER /app
+# Install pymol and Python dependencies
+RUN micromamba install -y -n base -c conda-forge pymol-open-source \
+ && micromamba clean --all --yes
 
+# Set the egg-info directory to somewhere writable
+ENV SETUPTOOLS_USE_DISTUTILS=stdlib
 
-# Install PyMOL via micromamba (conda-forge channel)
-RUN micromamba install -y -n base -c conda-forge \
-    pymol-open-source \
-    && micromamba clean --all --yes
-
-# Install Python/Kedro deps via pip
+# Use --no-build-isolation to skip rebuilding env just for setuptools
 RUN pip install --upgrade pip \
- && pip install .
+ && pip install --no-build-isolation .
 
-# Default: run Kedro pipeline
 ENTRYPOINT ["kedro", "run"]

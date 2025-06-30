@@ -1,24 +1,42 @@
-FROM mambaorg/micromamba:1.5.6
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
 
-ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
-    CONDA_DEFAULT_ENV=base \
-    PYTHONNOUSERSITE=1
+[project]
+requires-python = ">=3.9"
+name = "affinity_predictor"
+readme = ""
+dynamic = [ "version",]
+dependencies = [
+    "ipython>=8.10",
+    "jupyterlab>=3.0",
+    "notebook", 
+    "kedro~=0.19.14",
+    "tqdm",
+    "biopython",
+    "pandas",
+    "numpy",
+    "scikit-learn", ]
 
-# Create a clean writable working dir
-WORKDIR /opt/app
+[project.scripts]
+data-preparation = "affinity_predictor.__main__:main"
 
-# Copy only project files — do not try to chown them
-COPY . /opt/app
+[tool.kedro]
+package_name = "affinity_predictor"
+project_name = "affinity_predictor"
+kedro_init_version = "0.19.14"
+tools = "['Custom Logging', 'Data Structure']"
+example_pipeline = "False"
+source_dir = "src"
 
-# Install pymol and Python dependencies
-RUN micromamba install -y -n base -c conda-forge pymol-open-source \
- && micromamba clean --all --yes
+[project.entry-points."kedro.hooks"]
 
-# Set the egg-info directory to somewhere writable
-ENV SETUPTOOLS_USE_DISTUTILS=stdlib
+[tool.setuptools.dynamic.version]
+attr = "affinity_predictor.__version__"
 
-# Use --no-build-isolation to skip rebuilding env just for setuptools
-RUN pip install --upgrade pip \
- && pip install --no-build-isolation .
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
 
-ENTRYPOINT ["kedro", "run"]
+[tool.kedro_telemetry]
+project_id = "b80e3331b6a14085905475c276dee745"
