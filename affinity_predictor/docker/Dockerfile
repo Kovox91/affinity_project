@@ -8,6 +8,10 @@ ENV MAMBA_DOCKERFILE_ACTIVATE=1 \
 WORKDIR /build
 COPY . /opt/app
 
+RUN chown -R micromamba:micromamba /opt/app
+USER mambauser
+WORKDIR /opt/app
+
 # Install dependencies
 RUN micromamba install -y -n base -c conda-forge pymol-open-source \
  && micromamba clean --all --yes
