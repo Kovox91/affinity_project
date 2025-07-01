@@ -160,7 +160,6 @@ def process_pdbs(pdb_index: pd.DataFrame) -> list[dict]:
 
 def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list[dict]]:
     seed = 42
-    test_size = 0.2
 
     lines = affinities.strip().split("\n")
     valid_lines = []
@@ -190,10 +189,15 @@ def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list
             }
         except Exception as e:
             raise ValueError(f"Error processing line: {' '.join(parts)}\n{e}")
+    print("Sample affinities:")
+    for i, item in enumerate(items[:5]):
+        print(f"{i}: {item['affinity']}")
 
-    train_data, temp_data = train_test_split(items, test_size=0.3, random_state=seed)
+    train_data = items
+    # , temp_data = train_test_split(items, test_size=0.3, random_state=seed)
 
     # Second split: validation + test from temp_data
-    val_data, test_data = train_test_split(temp_data, test_size=0.5, random_state=seed)
+    val_data, test_data = 1, 1
+    # train_test_split(temp_data, test_size=0.5, random_state=seed)
 
     return train_data, test_data, val_data

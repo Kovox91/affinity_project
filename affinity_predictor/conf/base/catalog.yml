@@ -5,7 +5,7 @@
 
 input_sequences:
   type: text.TextDataset
-  filepath: data/01_raw/dGs.dat
+  filepath: data/01_raw/dGs_max.dat
   versioned: false
 
 dna_pdbs:
@@ -37,7 +37,7 @@ processed_pdbs:
 
 train_items:
   type: pickle.PickleDataset
-  filepath: data/05_model_input/train_items.pkl
+  filepath: data/05_model_input/train_max_items.pkl
 
 test_items:
   type: pickle.PickleDataset
