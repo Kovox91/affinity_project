@@ -154,11 +154,12 @@ def create_data_index(
 
 def process_pdbs(pdb_index: pd.DataFrame) -> list[dict]:
     return process_all_pdbs(
-        index_df=pdb_index
+        index_df=pdb_index,
+        dist_th=10.0
     )
 
 
-def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list[dict]]:
+def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list[dict], list[dict]]:
     seed = 42
     test_size = 0.2
 
@@ -176,24 +177,39 @@ def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list
             f"Number of valid affinity lines ({len(valid_lines)}) does not match number of items ({len(items)})"
         )
 
-    for item, parts in zip(items, valid_lines):
-        try:
-            col2 = float(parts[1])
-            col3 = float(parts[3])
-            affinity = col3 - col2
-            if affinity <= 0:
-                raise ValueError(f"Non-positive affinity value ({affinity}) in line: {' '.join(parts)}")
-            neglog_aff = -np.log(affinity)
-            item["affinity"] = {
-                "value": affinity,
-                "neglog_aff": float(neglog_aff),
-            }
-        except Exception as e:
-            raise ValueError(f"Error processing line: {' '.join(parts)}\n{e}")
+    # Collect all affinity values first for normalization
+    affinity_values = []
+    for parts in valid_lines:
+        col2 = float(parts[1])
+        col3 = float(parts[3])
+        affinity = col3 - col2
+        if affinity <= 0:
+            raise ValueError(f"Non-positive affinity value ({affinity}) in line: {' '.join(parts)}")
+        affinity_values.append(affinity)
 
-    train_data, temp_data = train_test_split(items, test_size=0.3, random_state=seed)
+    min_aff = min(affinity_values)
+    max_aff = max(affinity_values)
+    if max_aff == min_aff:
+        raise ValueError("All affinity values are the same; cannot normalize.")
 
-    # Second split: validation + test from temp_data
-    val_data, test_data = train_test_split(temp_data, test_size=0.5, random_state=seed)
+    # Assign normalized affinity values to items
+    for item, parts, affinity in zip(items, valid_lines, affinity_values):
+        normalized_aff = (affinity - min_aff) / (max_aff - min_aff)
+        item["affinity"] = {
+            "value": affinity,
+            "neglog_aff": -np.log10(affinity),
+        }
 
-    return train_data, test_data, val_data
+    # Set aside exactly 50 items for test
+    test_size = 50
+    assert len(items) > test_size, "Not enough items to allocate 15 test samples"
+
+    # First split: remove test set
+    remaining_items, test_data = train_test_split(items, test_size=test_size, random_state=seed)
+
+    # Second split: train and validation from remaining
+    train_data, val_data = train_test_split(
+        remaining_items, test_size=0.2, random_state=seed  # 20% validation of remaining
+    )
+
+    return train_data, val_data, test_data
