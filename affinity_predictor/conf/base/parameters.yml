@@ -1,1 +1,12 @@
 complex_pdb_output_folder: data/02_intermediate/complexes_pdbs
+
+complex_pdbs_params:
+  backbone_atoms:
+    - "P"
+    - "O5'"
+    - "C5'"
+    - "C4'"
+    - "C3'"
+    - "O3'"
+  residues_complex: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  residues_mutant: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
