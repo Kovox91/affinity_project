@@ -23,6 +23,7 @@ def create_pipeline(**kwargs) -> Pipeline:
                 inputs=dict(
                     mutant_structures="dna_pdbs",
                     complex_template="complex_template_pdb",
+                    params="params:complex_pdbs_params"
                 ),
                 outputs="complex_pdbs",
                 name="create_complex_pdbs_node",
