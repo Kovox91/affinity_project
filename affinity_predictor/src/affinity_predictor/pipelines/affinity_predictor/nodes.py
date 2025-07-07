@@ -197,11 +197,11 @@ def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list
         normalized_aff = (affinity - min_aff) / (max_aff - min_aff)
         item["affinity"] = {
             "value": affinity,
-            "neglog_aff": float(normalized_aff),
+            "neglog_aff": -np.log10(affinity),
         }
 
-    # Set aside exactly 15 items for test
-    test_size = 15
+    # Set aside exactly 50 items for test
+    test_size = 50
     assert len(items) > test_size, "Not enough items to allocate 15 test samples"
 
     # First split: remove test set
