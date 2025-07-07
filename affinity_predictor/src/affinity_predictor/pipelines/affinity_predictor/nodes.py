@@ -1,10 +1,3 @@
-"""
-This is a boilerplate pipeline 'affinity_prediction'
-generated using Kedro 0.19.12
-"""
-
-# straight foreward: call the pesto module then submmits pestos output to atomica module and run atomica
-
 from tqdm import tqdm
 from pymol import cmd
 from Bio.PDB import PDBParser, PDBIO, Superimposer
@@ -14,8 +7,19 @@ from submodules.ATOMICA.data.process_pdbs import process_all_pdbs
 import numpy as np
 from sklearn.model_selection import train_test_split
 import warnings
+import os
+
 
 def generate_dna_pdb(seq: str) -> str:
+    """
+    Generates a PDB-format string of a DNA molecule from a nucleotide sequence.
+
+    Args:
+        seq (str): DNA sequence (e.g., "ATCG").
+
+    Returns:
+        str: PDB-formatted string representing the DNA structure.
+    """
     cmd.fnab(seq, "dna")
     result = cmd.get_pdbstr("dna")
     cmd.delete("dna")
@@ -23,47 +27,72 @@ def generate_dna_pdb(seq: str) -> str:
 
 
 def create_DNA_pdbs(sequence_file_content: str) -> dict[str, str]:
+    """
+    Parses DNA sequences from input text and generates corresponding PDB-format strings, only if the input file contains required affinitie values (see README)
+
+    Args:
+        sequence_file_content (str): Multiline string where each line contains at least a DNA sequence
+                                     followed by four additional columns.
+
+    Returns:
+        dict[str, str]: Mapping from DNA sequences to their corresponding PDB-formatted strings.
+    """
     output = {}
     lines = sequence_file_content.strip().split("\n")
     for line in tqdm(lines, desc="Generating DNA PDBs"):
         if len(line.split()) != 5:
-            warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+            warnings.warn(
+                f"Skipping line due to missing values (expected 5 columns): {line}"
+            )
             continue
         sequence = line.split()[0]  # Only take the first element
         pdb_str = generate_dna_pdb(sequence)
         output[sequence] = pdb_str
     return output
 
-BACKBONE_ATOMS = ["P", "O5'", "C5'", "C4'", "C3'", "O3'"]
-RESIDUES_COMPLEX = list(range(2, 16))
-RESIDUES_MUTANT = list(range(5, 19))
 
+def get_backbone_atoms_filtered(structure, chain_id, residue_ids, backbone_atoms):
+    """
+    Retrieves specified backbone atoms from selected residues in a given chain of a structure.
 
-def get_residues_with_full_backbone(structure, chain_id, allowed_residues):
-    full_res = []
-    for residue in structure[chain_id]:
-        if residue.id[1] not in allowed_residues:
-            continue
-        if all(atom in residue for atom in BACKBONE_ATOMS):
-            full_res.append(residue.id[1])
-    return full_res
+    Args:
+        structure: Structure object containing chains and residues.
+        chain_id: Identifier of the chain to search within.
+        residue_ids: Iterable of residue sequence IDs to filter.
+        backbone_atoms: List of atom names to extract from each residue.
 
-
-def get_backbone_atoms_filtered(structure, chain_id, residue_ids):
+    Returns:
+        list: List of atom objects corresponding to the specified backbone atoms.
+    """
     atoms = []
     for residue in structure[chain_id]:
         if residue.id[1] not in residue_ids:
             continue
-        if all(atom in residue for atom in BACKBONE_ATOMS):
-            for atom_name in BACKBONE_ATOMS:
+        if all(atom in residue for atom in backbone_atoms):
+            for atom_name in backbone_atoms:
                 atoms.append(residue[atom_name])
     return atoms
 
 
-def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_mutant, new_chain_id):
+def replace_chain(
+    complex_struct, mutant_struct, chain_id_complex, chain_id_mutant, new_chain_id
+):
+    """
+    Replaces a chain in a complex structure with a chain from a mutant structure, optionally renaming it.
+
+    Args:
+        complex_struct: Structure containing the original complex.
+        mutant_struct: Structure containing the mutant chain.
+        chain_id_complex: Chain ID to be replaced in the complex.
+        chain_id_mutant: Chain ID of the mutant chain to insert.
+        new_chain_id: New chain ID to assign to the inserted mutant chain.
+
+    Returns:
+        None
+    """
     model_c = complex_struct
     model_m = mutant_struct
-    
+
     if chain_id_complex in model_c:
         model_c.detach_child(chain_id_complex)
     if chain_id_mutant in model_m:
@@ -73,26 +102,44 @@ def replace_chain(complex_struct, mutant_struct, chain_id_complex, chain_id_muta
         model_c.add(new_chain)
 
 
-
 def create_complex_pdbs(
-    mutant_structures: dict[str, str], complex_template: str
+    mutant_structures: dict[str, str], complex_template: str, params: dict
 ) -> dict[str, str]:
+    """
+    Generates complex PDB structures by superimposing mutant chains onto a complex template and replacing specified chains.
+
+    Args:
+        mutant_structures (dict[str, str]): Mapping of filenames to mutant PDB strings.
+        complex_template (str): PDB string of the complex template structure.
+        params (dict): Parameters including residue IDs and backbone atom names:
+            - "residue_complex": Residue IDs for complex chain filtering.
+            - "residues_mutant": Residue IDs for mutant chain filtering.
+            - "backbone_atoms": List of backbone atom names to use for superimposition.
+
+    Returns:
+        dict[str, str]: Mapping of filenames to newly created complex PDB strings.
+    """
     parser = PDBParser(QUIET=True)
 
     result = {}
 
+    RESIDUES_COMPLEX = params["residues_complex"]
+    RESIDUES_MUTANT = params["residues_mutant"]
+    BACKBONE_ATOMS = params["backbone_atoms"]
+
     for filename, mutant_pdb in tqdm(
         mutant_structures.items(), desc="Creating Complex PDBs"
     ):
-        complex_structure = parser.get_structure("complex", StringIO(complex_template))[0]
+        complex_structure = parser.get_structure("complex", StringIO(complex_template))[
+            0
+        ]
         mutant_structure = parser.get_structure("mutant", StringIO(mutant_pdb))[0]
 
-    
         complex_atoms_B = get_backbone_atoms_filtered(
-            complex_structure, "B", RESIDUES_COMPLEX
+            complex_structure, "B", RESIDUES_COMPLEX, BACKBONE_ATOMS
         )
         mutant_atoms_A = get_backbone_atoms_filtered(
-            mutant_structure, "A", RESIDUES_MUTANT
+            mutant_structure, "A", RESIDUES_MUTANT, BACKBONE_ATOMS
         )
 
         if len(complex_atoms_B) != len(mutant_atoms_A):
@@ -118,7 +165,16 @@ def create_complex_pdbs(
 
 
 def save_pdb_files(pdb_dict: dict[str, str], output_folder: str) -> None:
-    import os
+    """
+    Saves PDB strings to files in a specified output folder, ensuring the folder exists.
+
+    Args:
+        pdb_dict (dict[str, str]): Mapping of filenames to PDB-formatted strings.
+        output_folder (str): Path to the folder where files will be saved.
+
+    Returns:
+        None
+    """
     os.makedirs(output_folder, exist_ok=True)
     for filename, pdb_str in pdb_dict.items():
         if not filename.endswith(".pdb"):
@@ -128,10 +184,18 @@ def save_pdb_files(pdb_dict: dict[str, str], output_folder: str) -> None:
             f.write(pdb_str)
 
 
-def create_data_index(
-    pdb_files: dict[str, str],
-    output_folder: str
-) -> pd.DataFrame:
+def create_data_index(pdb_files: dict[str, str], output_folder: str) -> pd.DataFrame:
+    """
+    Creates a DataFrame index for PDB files with metadata for downstream processing with ATOMICA.
+
+    Args:
+        pdb_files (dict[str, str]): Mapping of filenames to PDB strings.
+        output_folder (str): Directory path where PDB files are saved.
+
+    Returns:
+        pd.DataFrame: DataFrame with columns including pdb_id, pdb_path, chain identifiers, and ligand information placeholders.
+    """
+
     pdb_entries = []
 
     for filename in tqdm(pdb_files.keys(), desc="Indexing PDBs"):
@@ -153,13 +217,23 @@ def create_data_index(
 
 
 def process_pdbs(pdb_index: pd.DataFrame) -> list[dict]:
-    return process_all_pdbs(
-        index_df=pdb_index,
-        dist_th=10.0
-    )
+    return process_all_pdbs(index_df=pdb_index, dist_th=10.0)
 
 
-def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list[dict], list[dict]]:
+def add_affinities(
+    items: list[dict], affinities: str
+) -> tuple[list[dict], list[dict], list[dict]]:
+    """
+    Adds affinity values to items and splits them into training, validation, and test sets.
+
+    Args:
+        items (list[dict]): List of data items to which affinities will be added.
+        affinities (str): Multiline string where each line contains affinity-related values (expected 5 columns).
+
+    Returns:
+        tuple: Three lists of dicts representing (train_data, val_data, test_data) splits with affinity information added.
+    """
+
     seed = 42
     test_size = 0.2
 
@@ -184,7 +258,9 @@ def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list
         col3 = float(parts[3])
         affinity = col3 - col2
         if affinity <= 0:
-            raise ValueError(f"Non-positive affinity value ({affinity}) in line: {' '.join(parts)}")
+            raise ValueError(
+                f"Non-positive affinity value ({affinity}) in line: {' '.join(parts)}"
+            )
         affinity_values.append(affinity)
 
     min_aff = min(affinity_values)
@@ -205,7 +281,9 @@ def add_affinities(items: list[dict], affinities: str) -> tuple[list[dict], list
     assert len(items) > test_size, "Not enough items to allocate 15 test samples"
 
     # First split: remove test set
-    remaining_items, test_data = train_test_split(items, test_size=test_size, random_state=seed)
+    remaining_items, test_data = train_test_split(
+        items, test_size=test_size, random_state=seed
+    )
 
     # Second split: train and validation from remaining
     train_data, val_data = train_test_split(

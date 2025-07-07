@@ -15,6 +15,7 @@ affinity_predictor/src/dna_positioning/pymol/
 # Ignore everything in the folder
 affinity_predictor/data/02_intermediate/**
 
+affinity_predictor/data/05_model_input/**
 # But do not ignore the folder itself (so the negation rule can apply)
 !affinity_predictor/data/02_intermediate/
 !affinity_predictor/data/02_intermediate/.gitkeep
