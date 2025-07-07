@@ -2516,3 +2516,295 @@ Number of valid affinity lines (0) does not match number of items (609)
 2025-06-25 14:01:25,336 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
 2025-06-25 14:01:25,337 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
 2025-06-25 14:01:25,338 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.9 sec.
+2025-07-02 09:57:20,535 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-02 09:57:21,047 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-02 09:57:21,094 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-02 09:57:37,036 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-02 09:57:37,518 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-02 09:57:37,520 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-02 09:57:37,521 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-02 09:59:19,851 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 09:59:22,257 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 09:59:35,574 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 09:59:39,833 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 10:00:21,160 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 10:01:56,328 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-07-02 10:01:56,382 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-07-02 10:01:56,384 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-07-02 10:01:56,385 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-07-02 10:01:56,401 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-07-02 10:01:56,761 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-07-02 10:07:42,559 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-07-02 10:07:43,189 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-07-02 10:07:43,190 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-07-02 10:07:43,191 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-02 10:07:43,243 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-02 10:07:43,245 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-07-02 10:07:43,248 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-07-02 10:07:43,261 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-07-02 10:07:43,262 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-07-02 10:07:43,262 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-02 10:07:43,313 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-02 10:07:43,315 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-07-02 10:07:44,857 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-07-02 10:07:44,858 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-07-02 10:07:44,859 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-07-02 10:07:44,862 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-07-02 10:08:10,772 - kedro.io.data_catalog - INFO - Saving data to processed_pdbs (PickleDataset)...
+2025-07-02 10:08:11,088 - kedro.runner.sequential_runner - INFO - Completed node: process_pdbs_node
+2025-07-02 10:08:11,090 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-07-02 10:08:11,091 - kedro.io.data_catalog - INFO - Loading data from processed_pdbs (PickleDataset)...
+2025-07-02 10:08:11,723 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-02 10:08:11,725 - kedro.pipeline.node - INFO - Running node: add_affinities_node: add_affinities([processed_pdbs;input_sequences]) -> [train_items;test_items;val_items]
+2025-07-02 10:08:11,726 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 10:08:11,727 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 10:08:11,728 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 10:08:11,730 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 10:08:11,731 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 10:08:11,736 - kedro.io.data_catalog - INFO - Saving data to train_items (PickleDataset)...
+2025-07-02 10:08:11,885 - kedro.io.data_catalog - INFO - Saving data to test_items (PickleDataset)...
+2025-07-02 10:08:11,890 - kedro.io.data_catalog - INFO - Saving data to val_items (PickleDataset)...
+2025-07-02 10:08:11,987 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
+2025-07-02 10:08:11,988 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-07-02 10:08:11,989 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 634.5 sec.
+2025-07-02 12:55:39,581 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-02 12:55:39,817 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-02 12:55:39,850 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-02 12:55:41,808 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-02 12:55:42,287 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-02 12:55:42,289 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-02 12:55:42,291 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-02 12:57:27,232 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 12:57:29,728 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 12:57:42,850 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 12:57:47,036 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 12:58:27,940 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-02 13:00:06,276 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-07-02 13:00:06,412 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-07-02 13:00:06,413 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-07-02 13:00:06,414 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-07-02 13:00:06,433 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-07-02 13:00:06,948 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-07-02 13:06:12,566 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-07-02 13:06:13,216 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-07-02 13:06:13,217 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-07-02 13:06:13,218 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-02 13:06:13,275 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-02 13:06:13,277 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-07-02 13:06:13,280 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-07-02 13:06:13,290 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-07-02 13:06:13,291 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-07-02 13:06:13,292 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-02 13:06:13,348 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-02 13:06:13,349 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-07-02 13:06:14,330 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-07-02 13:06:14,331 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-07-02 13:06:14,332 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-07-02 13:06:14,335 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-07-02 13:06:42,483 - kedro.io.data_catalog - INFO - Saving data to processed_pdbs (PickleDataset)...
+2025-07-02 13:06:42,944 - kedro.runner.sequential_runner - INFO - Completed node: process_pdbs_node
+2025-07-02 13:06:42,945 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-07-02 13:06:42,946 - kedro.io.data_catalog - INFO - Loading data from processed_pdbs (PickleDataset)...
+2025-07-02 13:06:43,617 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-02 13:06:43,619 - kedro.pipeline.node - INFO - Running node: add_affinities_node: add_affinities([processed_pdbs;input_sequences]) -> [train_items;test_items;val_items]
+2025-07-02 13:06:43,620 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 13:06:43,621 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 13:06:43,623 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 13:06:43,624 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 13:06:43,626 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-02 13:06:43,629 - kedro.io.data_catalog - INFO - Saving data to train_items (PickleDataset)...
+2025-07-02 13:06:43,781 - kedro.io.data_catalog - INFO - Saving data to test_items (PickleDataset)...
+2025-07-02 13:06:43,811 - kedro.io.data_catalog - INFO - Saving data to val_items (PickleDataset)...
+2025-07-02 13:06:43,878 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
+2025-07-02 13:06:43,879 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-07-02 13:06:43,880 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 661.6 sec.
+2025-07-03 22:21:45,389 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-03 22:21:45,669 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-03 22:21:45,840 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-03 22:21:48,807 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-03 22:21:49,291 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-03 22:21:49,293 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-03 22:21:49,295 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-03 22:23:35,244 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-03 22:23:37,798 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-03 22:23:51,190 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-03 22:23:55,474 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-03 22:24:37,041 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-03 22:26:13,387 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-07-03 22:26:13,437 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-07-03 22:26:13,438 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-07-03 22:26:13,439 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-07-03 22:26:13,452 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-07-03 22:26:14,048 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-07-03 22:32:01,874 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-07-03 22:32:02,194 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-07-03 22:32:02,195 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-07-03 22:32:02,196 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-03 22:32:02,224 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-03 22:32:02,226 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-07-03 22:32:02,230 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-07-03 22:32:02,237 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-07-03 22:32:02,238 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-07-03 22:32:02,239 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-03 22:32:02,268 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-03 22:32:02,269 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-07-03 22:32:03,220 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-07-03 22:32:03,221 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-07-03 22:32:03,223 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-07-03 22:32:03,226 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-07-03 22:32:29,893 - kedro.io.data_catalog - INFO - Saving data to processed_pdbs (PickleDataset)...
+2025-07-03 22:32:30,229 - kedro.runner.sequential_runner - INFO - Completed node: process_pdbs_node
+2025-07-03 22:32:30,230 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-07-03 22:32:30,231 - kedro.io.data_catalog - INFO - Loading data from processed_pdbs (PickleDataset)...
+2025-07-03 22:32:30,887 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-03 22:32:30,888 - kedro.pipeline.node - INFO - Running node: add_affinities_node: add_affinities([processed_pdbs;input_sequences]) -> [train_items;test_items;val_items]
+2025-07-03 22:32:30,889 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-03 22:32:30,891 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-03 22:32:30,892 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-03 22:32:30,893 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-03 22:32:30,894 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-03 22:32:30,900 - kedro.io.data_catalog - INFO - Saving data to train_items (PickleDataset)...
+2025-07-03 22:32:31,059 - kedro.io.data_catalog - INFO - Saving data to test_items (PickleDataset)...
+2025-07-03 22:32:31,093 - kedro.io.data_catalog - INFO - Saving data to val_items (PickleDataset)...
+2025-07-03 22:32:31,167 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
+2025-07-03 22:32:31,169 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-07-03 22:32:31,170 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 641.9 sec.
+2025-07-04 10:43:49,331 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-04 10:43:49,723 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-04 10:43:49,771 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-04 10:44:06,057 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-04 10:44:06,540 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-04 10:44:06,543 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-04 10:44:06,545 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-04 10:46:22,095 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-04 10:46:25,276 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-04 10:46:42,357 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-04 10:46:47,813 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-04 10:47:41,686 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:30: UserWarning: Skipping line due to missing values (expected 5 columns): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping line due to missing values (expected 5 columns): {line}")
+
+2025-07-04 10:49:47,220 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-07-04 10:49:47,282 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-07-04 10:49:47,283 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-07-04 10:49:47,284 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-07-04 10:49:47,305 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-07-04 10:49:47,600 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb]) -> [complex_pdbs]
+2025-07-04 10:56:46,062 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-07-04 10:56:46,864 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-07-04 10:56:46,865 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-07-04 10:56:46,866 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-04 10:56:46,927 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-04 10:56:46,929 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-07-04 10:56:46,932 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-07-04 10:56:46,944 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-07-04 10:56:46,945 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-07-04 10:56:46,946 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-04 10:56:47,007 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-04 10:56:47,008 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-07-04 10:56:47,722 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-07-04 10:56:47,723 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-07-04 10:56:47,724 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-07-04 10:56:47,728 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-07-04 10:57:13,961 - kedro.io.data_catalog - INFO - Saving data to processed_pdbs (PickleDataset)...
+2025-07-04 10:57:14,290 - kedro.runner.sequential_runner - INFO - Completed node: process_pdbs_node
+2025-07-04 10:57:14,292 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-07-04 10:57:14,293 - kedro.io.data_catalog - INFO - Loading data from processed_pdbs (PickleDataset)...
+2025-07-04 10:57:14,941 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-04 10:57:14,942 - kedro.pipeline.node - INFO - Running node: add_affinities_node: add_affinities([processed_pdbs;input_sequences]) -> [train_items;test_items;val_items]
+2025-07-04 10:57:14,943 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): AAGTCGAGAAAGCGAGGACAT 106.52 1.03 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-04 10:57:14,944 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): GAAAAGAGCACTGGTATCTCA 54.93 1.35 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-04 10:57:14,946 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGGTTCGGTCCACGGAATCGT 228.43 0.81 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-04 10:57:14,947 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CGATTATCTCATGACTCAGCC 91.45 1.55 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-04 10:57:14,948 - py.warnings - WARNING - /home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py:173: UserWarning: Skipping invalid affinity line (missing Values): CCCACCCGCATTTCTCTCTTG 201.98 1.91 
+  warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+
+2025-07-04 10:57:14,951 - kedro.io.data_catalog - INFO - Saving data to train_items (PickleDataset)...
+2025-07-04 10:57:15,090 - kedro.io.data_catalog - INFO - Saving data to test_items (PickleDataset)...
+2025-07-04 10:57:15,118 - kedro.io.data_catalog - INFO - Saving data to val_items (PickleDataset)...
+2025-07-04 10:57:15,202 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
+2025-07-04 10:57:15,203 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-07-04 10:57:15,204 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 788.7 sec.
