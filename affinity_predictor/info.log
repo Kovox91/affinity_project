@@ -2918,3 +2918,123 @@ You can resume the pipeline run from the nearest nodes with persisted inputs by 
 2025-07-07 10:42:17,053 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
 2025-07-07 10:42:17,054 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
 2025-07-07 10:42:17,055 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 373.6 sec.
+2025-07-07 11:26:36,592 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-07 11:26:36,797 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-07 11:26:36,817 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-07 11:26:37,257 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/project/__init__.py:452: UserWarning: An error occurred while importing the 'affinity_predictor.pipelines.affinity_predictor' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/project/__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/sascha/miniconda3/envs/prep_test/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/pipeline.py", line 2, in <module>
+    from .nodes import (
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py", line 6, in <module>
+    from submodules.ATOMICA.data.process_pdbs import process_all_pdbs
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/process_pdbs.py", line 8, in <module>
+    from data.converter.pdb_lig_to_blocks import extract_pdb_ligand
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/converter/pdb_lig_to_blocks.py", line 3, in <module>
+    from data.dataset import Block, Atom, VOCAB
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/dataset.py", line 11, in <module>
+    import orjson
+ModuleNotFoundError: No module named 'orjson'
+
+  warnings.warn(
+
+2025-07-07 11:26:37,263 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-07 11:27:15,031 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-07 11:27:15,236 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-07 11:27:15,257 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-07 11:27:15,541 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/project/__init__.py:452: UserWarning: An error occurred while importing the 'affinity_predictor.pipelines.affinity_predictor' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/project/__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/sascha/miniconda3/envs/prep_test/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/pipeline.py", line 2, in <module>
+    from .nodes import (
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py", line 6, in <module>
+    from submodules.ATOMICA.data.process_pdbs import process_all_pdbs
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/process_pdbs.py", line 8, in <module>
+    from data.converter.pdb_lig_to_blocks import extract_pdb_ligand
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/converter/pdb_lig_to_blocks.py", line 3, in <module>
+    from data.dataset import Block, Atom, VOCAB
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/dataset.py", line 13, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+  warnings.warn(
+
+2025-07-07 11:27:15,546 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-07 11:30:12,805 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-07 11:30:13,025 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-07 11:30:13,046 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-07 11:30:13,414 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/project/__init__.py:452: UserWarning: An error occurred while importing the 'affinity_predictor.pipelines.affinity_predictor' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/project/__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/sascha/miniconda3/envs/prep_test/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/pipeline.py", line 2, in <module>
+    from .nodes import (
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/affinity_predictor/pipelines/affinity_predictor/nodes.py", line 6, in <module>
+    from submodules.ATOMICA.data.process_pdbs import process_all_pdbs
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/process_pdbs.py", line 8, in <module>
+    from data.converter.pdb_lig_to_blocks import extract_pdb_ligand
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/converter/pdb_lig_to_blocks.py", line 3, in <module>
+    from data.dataset import Block, Atom, VOCAB
+  File "/home/sascha/data/Projects/affinity_project/affinity_predictor/src/submodules/ATOMICA/data/dataset.py", line 11, in <module>
+    import orjson
+ModuleNotFoundError: No module named 'orjson'
+
+  warnings.warn(
+
+2025-07-07 11:30:13,419 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-07 11:35:12,648 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-07 11:35:13,399 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-07 11:35:13,422 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-07 11:35:16,315 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-07 11:35:50,768 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-07 11:35:50,977 - py.warnings - WARNING - /home/sascha/miniconda3/envs/prep_test/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-07 11:35:50,998 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-07 11:35:52,958 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-07 11:35:53,435 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-07 11:35:53,437 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-07 11:35:53,438 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
