@@ -12,5 +12,9 @@ wheels/
 # pymol
 affinity_predictor/src/dna_positioning/pymol/
 
-# intermediate files
-affinity_predictor/data/02_intermediate/*.pkl
+# Ignore everything in the folder
+affinity_predictor/data/02_intermediate/**
+
+# But do not ignore the folder itself (so the negation rule can apply)
+!affinity_predictor/data/02_intermediate/
+!affinity_predictor/data/02_intermediate/.gitkeep
