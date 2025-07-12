@@ -46,3 +46,7 @@ test_items:
 val_items:
   type: pickle.PickleDataset
   filepath: data/05_model_input/val_items.pkl
+
+infer_items:
+  type: pickle.PickleDataset
+  filepath: data/05_model_input/infer_items.pkl

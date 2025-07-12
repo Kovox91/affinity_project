@@ -50,7 +50,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             node(
                 func=add_affinities,
                 inputs=["processed_pdbs", "input_sequences"],
-                outputs=["train_items", "test_items", "val_items"],
+                outputs=["train_items", "test_items", "val_items", "infer_items"],
                 name="add_affinities_node",
             ),
         ]
