@@ -5,7 +5,7 @@
 
 input_sequences:
   type: text.TextDataset
-  filepath: data/01_raw/dGs.dat
+  filepath: data/01_raw/more_seqeunces.csv
   versioned: false
 
 dna_pdbs:
