@@ -3220,3 +3220,81 @@ loop of ufunc does not support argument 0 of type NoneType which has no callable
 2025-07-12 17:32:14,806 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
 2025-07-12 17:32:14,810 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
 2025-07-12 17:32:14,814 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-12 17:33:15,174 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-12 17:33:15,409 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-12 17:33:15,441 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-12 17:33:17,378 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-12 17:33:17,856 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-12 17:33:17,858 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-12 17:33:17,859 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-12 17:43:33,738 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-12 17:43:33,973 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-12 17:43:34,006 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-12 17:43:35,956 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-12 17:43:36,436 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-12 17:43:36,437 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-12 17:43:36,439 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-12 17:43:36,890 - kedro.pipeline.node - ERROR - Node create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs] failed with error: 
+ Error: Invalid input selection(s)
+2025-07-12 17:43:36,891 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-07-12 17:45:09,530 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-12 17:45:09,766 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-12 17:45:09,798 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-12 17:45:11,739 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-12 17:45:12,221 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-12 17:45:12,223 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-12 17:45:12,224 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-12 17:45:12,621 - kedro.pipeline.node - ERROR - Node create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs] failed with error: 
+ Error: Invalid input selection(s)
+2025-07-12 17:45:12,623 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-07-12 17:46:33,979 - kedro.framework.project - INFO - Using 'conf/logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-07-12 17:46:34,217 - py.warnings - WARNING - /home/sascha/miniconda3/envs/atomicaenv/lib/python3.9/site-packages/kedro/framework/cli/utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-07-12 17:46:34,250 - kedro.framework.session.session - INFO - Kedro project affinity_predictor
+2025-07-12 17:46:36,207 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-07-12 17:46:36,689 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-07-12 17:46:36,691 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-12 17:46:36,692 - kedro.pipeline.node - INFO - Running node: create_dna_pdbs_node: create_DNA_pdbs([input_sequences]) -> [dna_pdbs]
+2025-07-13 05:23:44,272 - kedro.io.data_catalog - INFO - Saving data to dna_pdbs (PickleDataset)...
+2025-07-13 05:23:48,807 - kedro.runner.sequential_runner - INFO - Completed node: create_dna_pdbs_node
+2025-07-13 05:23:49,246 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-07-13 05:23:49,247 - kedro.io.data_catalog - INFO - Loading data from dna_pdbs (PickleDataset)...
+2025-07-13 05:23:50,454 - kedro.io.data_catalog - INFO - Loading data from complex_template_pdb (TextDataset)...
+2025-07-13 05:23:50,489 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdbs_params (MemoryDataset)...
+2025-07-13 05:23:50,491 - kedro.pipeline.node - INFO - Running node: create_complex_pdbs_node: create_complex_pdbs([dna_pdbs;complex_template_pdb;params:complex_pdbs_params]) -> [complex_pdbs]
+2025-07-13 07:09:42,203 - kedro.io.data_catalog - INFO - Saving data to complex_pdbs (PickleDataset)...
+2025-07-13 07:09:56,912 - kedro.runner.sequential_runner - INFO - Completed node: create_complex_pdbs_node
+2025-07-13 07:09:56,922 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-07-13 07:09:56,925 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-13 07:09:58,015 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-13 07:09:58,021 - kedro.pipeline.node - INFO - Running node: create_index_node: create_data_index([complex_pdbs;params:complex_pdb_output_folder]) -> [complex_index_df]
+2025-07-13 07:09:58,047 - kedro.io.data_catalog - INFO - Saving data to complex_index_df (CSVDataset)...
+2025-07-13 07:09:58,257 - kedro.runner.sequential_runner - INFO - Completed node: create_index_node
+2025-07-13 07:09:58,258 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-07-13 07:09:58,259 - kedro.io.data_catalog - INFO - Loading data from complex_pdbs (PickleDataset)...
+2025-07-13 07:09:59,348 - kedro.io.data_catalog - INFO - Loading data from params:complex_pdb_output_folder (MemoryDataset)...
+2025-07-13 07:09:59,350 - kedro.pipeline.node - INFO - Running node: save_complex_pdb_files_node: save_pdb_files([complex_pdbs;params:complex_pdb_output_folder]) -> None
+2025-07-13 07:10:10,911 - kedro.runner.sequential_runner - INFO - Completed node: save_complex_pdb_files_node
+2025-07-13 07:10:10,912 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-07-13 07:10:10,913 - kedro.io.data_catalog - INFO - Loading data from complex_index_df (CSVDataset)...
+2025-07-13 07:10:10,930 - kedro.pipeline.node - INFO - Running node: process_pdbs_node: process_pdbs([complex_index_df]) -> [processed_pdbs]
+2025-07-13 07:17:55,174 - kedro.io.data_catalog - INFO - Saving data to processed_pdbs (PickleDataset)...
+2025-07-13 07:18:04,577 - kedro.runner.sequential_runner - INFO - Completed node: process_pdbs_node
+2025-07-13 07:18:04,587 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-07-13 07:18:04,588 - kedro.io.data_catalog - INFO - Loading data from processed_pdbs (PickleDataset)...
+2025-07-13 07:18:17,212 - kedro.io.data_catalog - INFO - Loading data from input_sequences (TextDataset)...
+2025-07-13 07:18:17,216 - kedro.pipeline.node - INFO - Running node: add_affinities_node: add_affinities([processed_pdbs;input_sequences]) -> [train_items;test_items;val_items;infer_items]
+2025-07-13 07:18:17,238 - kedro.io.data_catalog - INFO - Saving data to train_items (PickleDataset)...
+2025-07-13 07:18:22,624 - kedro.io.data_catalog - INFO - Saving data to test_items (PickleDataset)...
+2025-07-13 07:18:23,746 - kedro.io.data_catalog - INFO - Saving data to val_items (PickleDataset)...
+2025-07-13 07:18:24,236 - kedro.io.data_catalog - INFO - Saving data to infer_items (PickleDataset)...
+2025-07-13 07:18:32,215 - kedro.runner.sequential_runner - INFO - Completed node: add_affinities_node
+2025-07-13 07:18:32,217 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-07-13 07:18:32,219 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 48715.5 sec.
