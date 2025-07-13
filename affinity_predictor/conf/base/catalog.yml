@@ -5,7 +5,7 @@
 
 input_sequences:
   type: text.TextDataset
-  filepath: data/01_raw/dGs.dat
+  filepath: data/01_raw/more_seqeunces.csv
   versioned: false
 
 dna_pdbs:
@@ -46,3 +46,7 @@ test_items:
 val_items:
   type: pickle.PickleDataset
   filepath: data/05_model_input/val_items.pkl
+
+infer_items:
+  type: pickle.PickleDataset
+  filepath: data/05_model_input/infer_items.pkl

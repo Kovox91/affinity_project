@@ -40,12 +40,7 @@ def create_DNA_pdbs(sequence_file_content: str) -> dict[str, str]:
     output = {}
     lines = sequence_file_content.strip().split("\n")
     for line in tqdm(lines, desc="Generating DNA PDBs"):
-        if len(line.split()) != 5:
-            warnings.warn(
-                f"Skipping line due to missing values (expected 5 columns): {line}"
-            )
-            continue
-        sequence = line.split()[0]  # Only take the first element
+        sequence = line.split()[0]  # Only take the first element, the sequence
         pdb_str = generate_dna_pdb(sequence)
         output[sequence] = pdb_str
     return output
@@ -235,46 +230,43 @@ def add_affinities(
     """
 
     seed = 42
-    test_size = 0.2
 
     lines = affinities.strip().split("\n")
-    valid_lines = []
+    affinity_values = []
+
     for line in lines:
         parts = line.strip().split()
         if len(parts) == 5:
-            valid_lines.append(parts)
+            col2 = float(parts[1])
+            col3 = float(parts[3])
+            affinity = col3 - col2
         else:
-            warnings.warn(f"Skipping invalid affinity line (missing Values): {line}")
+            affinity = None
 
-    if len(valid_lines) != len(items):
-        raise ValueError(
-            f"Number of valid affinity lines ({len(valid_lines)}) does not match number of items ({len(items)})"
-        )
-
-    # Collect all affinity values first for normalization
-    affinity_values = []
-    for parts in valid_lines:
-        col2 = float(parts[1])
-        col3 = float(parts[3])
-        affinity = col3 - col2
-        if affinity <= 0:
-            raise ValueError(
-                f"Non-positive affinity value ({affinity}) in line: {' '.join(parts)}"
-            )
         affinity_values.append(affinity)
 
-    min_aff = min(affinity_values)
-    max_aff = max(affinity_values)
-    if max_aff == min_aff:
-        raise ValueError("All affinity values are the same; cannot normalize.")
-
-    # Assign normalized affinity values to items
-    for item, parts, affinity in zip(items, valid_lines, affinity_values):
-        normalized_aff = (affinity - min_aff) / (max_aff - min_aff)
+    # Assign affinity values to items
+    for item, parts, affinity in zip(items, lines, affinity_values):
         item["affinity"] = {
             "value": affinity,
-            "neglog_aff": -np.log10(affinity),
+            "neglog_aff": None if affinity is None else -np.log10(affinity),
         }
+
+    # Set aside all inference items, that had no affinity assigned
+    infer_data = [
+        item
+        for item in items
+        if (
+            ("affinity" in item)
+            and (
+                item["affinity"]["value"] is None
+                or (
+                    isinstance(item["affinity"]["value"], float)
+                    and np.isnan(item["affinity"]["value"])
+                )
+            )
+        )
+    ]
 
     # Set aside exactly 50 items for test
     test_size = 50
@@ -290,4 +282,4 @@ def add_affinities(
         remaining_items, test_size=0.2, random_state=seed  # 20% validation of remaining
     )
 
-    return train_data, val_data, test_data
+    return train_data, val_data, test_data, infer_data
